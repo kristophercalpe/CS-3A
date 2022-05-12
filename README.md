@@ -1,2 +1,3 @@
 # CS-3A
-test hehe
+
+Welcome to BSCS 3A Repository <3
