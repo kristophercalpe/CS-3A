@@ -53,7 +53,7 @@
             </div>
             <div class="form-group">
                 <button type="submit" name="update" class="btn btn-success">Update</button>
-                <a class="btn btn-primary" href="changepassword.php">Password Change</a>
+                <a class="btn btn-primary" href="changepassword2.php">Password Change</a>
               </div>
         </form>
         </div>
