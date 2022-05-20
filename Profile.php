@@ -16,16 +16,14 @@
     <div class="container bg-dark text-light p-3 rounded my-4">     
         <div class="d-flex align-items-center justify-content-between px-3">
         <h2>USER LIST</h2>
-        <form class ="form-inline">
+        <form class="form-inline">
         <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addnewuser">
         <i class="bi bi-plus-lg"></i> Create New User
         </button>
         <button type="button" class="btn btn-success">
-                <i class="bi bi-box-arrow-in-right"> <class="text-light" style="text-decoration:none; property"></i> Back
+                <i class="bi bi-box-arrow-in-right"><a href="admin_panel.php" class="text-light" style="text-decoration:none; property"></i> Back</a>
                 </button>
             </form>
-            
-
             </div>
     </div>
 
@@ -48,9 +46,9 @@
                 <td>Otto</td>
                 <div class >
                     <td>
-                        <a class = "btn btn-success" >View</a>
-                        <a class = "btn btn-warning" >Edit</a>
-                        <a class = "btn btn-danger">Remove</a>
+                        <a class = "btn btn-success " href="view.php">View</a>
+                        <a class = "btn btn-warning " href="view.php">Edit</a>
+                        <a class = "btn btn-danger "href="">Remove</a>
                     </td>
                 </div>
                 </tr> 
