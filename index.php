@@ -35,13 +35,13 @@ if (isset($_POST['submit'])) {
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+   	<link rel="preconnect" href="https://fonts.googleapis.com">
+    	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   	<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
-	<title>Login</title>
+	<title>Log in</title>
 </head>
 <body>
 	<div class="logform">
@@ -54,9 +54,9 @@ if (isset($_POST['submit'])) {
 				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
 			</div>
 			<div class="input-group">
-				<button name="submit" class="btn">Mag-login</button>
+				<button name="submit" class="btn">Log in</button>
 			</div>
-			<p class="login-register-text">Walang account? <a href="register.php">Gumawa ng Account</a>.</p>
+			<p class="login-register-text">No Account? <a href="register.php">Register an Account.</a>.</p>
 		</form>
 	</div>
 </body>
