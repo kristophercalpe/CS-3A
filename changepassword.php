@@ -14,16 +14,14 @@
 
 <div class="container bg-dark text-light p-3 rounded my-4">
         <div class="d-flex align-items-center justify-content-between px-3">
-        <h2>ADMIN PANEL</h2>
+        <h2>USER LIST</h2>
              <form class="form-inline">
+
                 <button type="button" class="btn btn-success">
-                <i class="bi bi-plus-lg"><a href="admin_panel.php" class="text-light" style="text-decoration:none; property"></i> Admin List</a>
+                <i class="bi bi-plus-lg"><a href="Profile.php" class="text-light" style="text-decoration:none; property"></i>User List</a>
                 </button>
                 <button type="button" class="btn btn-success">
-                <i class="bi bi-people"></i> User List
-                </button>
-                <button type="button" class="btn btn-success">
-                <i class="bi bi-box-arrow-in-right"><a href="admin_panel.php" class="text-light" style="text-decoration:none; property"></i> Back</a>
+                <i class="bi bi-box-arrow-in-right"><a href="Profile.php" class="text-light" style="text-decoration:none; property"></i> Back</a>
                 </button>
             </form>
         </div>
@@ -32,7 +30,7 @@
     <div style="width:1100px; margin:5px auto">
     <div class="card">
         <div class="card-header">
-            <h3> Change your Password <a href="edit.php" class="btn btn-primary" style="margin: 6px; margin-left: 690px" >Back</a> </h3>
+            <h3> Change your Password <a href="view.php" class="btn btn-primary" style="margin: 6px; margin-left: 690px" >Back</a> </h3>
         </div>
         <div class="card-body">
 
