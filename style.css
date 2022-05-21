@@ -1,0 +1,188 @@
+body {margin:0; background-color: gray;}
+
+.icon-bar {
+  width: 100%;
+  background-color: #2B1F27;
+  overflow: auto;
+}
+
+.icon-bar a {
+  float: left;
+  width: 18%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 38px;
+}
+
+.icon-bar a:hover {
+  background-color: hotpink;
+}
+
+.active {
+  background-color: hotpink;
+}
+
+.icon-bar-2 {
+  background-color: #2B1F27;
+  overflow: auto;
+}
+
+.icon-bar-2 a {
+  float: right;
+  width: 12%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 38px;
+}
+
+.topnav input[type=text] {
+  float: right;
+  padding: 8px;
+  margin-top: 16px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  text-align: left;
+  width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: right;
+    display: block;
+    text-align: left;
+    width: 60%;
+    margin-top: 16px;
+    margin-right: 16px;
+    padding: 8px;
+  }
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+.formDesign{
+    position: absolute;
+    margin-top:5%;
+    margin-left:10%;
+    width: 80%;
+    height:200px;
+    font-size: 35px;
+
+    
+}
+.formDesign2{
+    position: absolute;
+    margin-top:0%;
+    margin-left:10%;
+    width: 80%;
+    height:200px;
+    font-size: 35px;
+}
+
+.first-box{
+  position:relative;
+  background-color: hotpink;
+  margin-right: 50%;
+  margin-left: 25%;
+  height: 300px;
+  width: 1000px;
+  border: 3px solid #555;
+  border-radius: 25px;
+  padding: 5px;
+  
+}
+
+.icon-bar-fb{
+  width: 100%;
+  background-color: hotpink;
+  overflow: auto;
+  border-radius: 25px;
+}
+.icon-bar-fb a {
+  float: left;
+  text-align: left;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 30px;
+  margin-left: 5%;
+
+}
+
+.icon-bar-fb1{
+  background-color: hotpink;
+  overflow: auto;
+}
+.icon-bar-fb1 a {
+  float: left;
+  text-align: left;
+  padding: 22px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+.icon-bar-fb2{
+  background-color: hotpink;
+  overflow: auto;
+}
+.icon-bar-fb2 a {
+  float: right;
+  text-align: left;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 30px;
+  margin-right: 5%;
+}
+@media screen and (max-width: 1000px) {
+  .first-box {
+    float: center;
+    display: block;
+    text-align: left;
+    width: 76%;
+    padding: 8px;
+  }
+}
+
+.second-box{
+  position: relative;  
+  background-color: hotpink;
+  margin-right: 10%;
+  margin-left: 25%;
+  height: 300px;
+  width: 1000px;
+  border: 3px solid #555;
+  border-radius: 25px;
+  padding: 5px;
+}
+
+.icon-bar-sb {
+  width: 100%;
+  background-color: hotpink;
+  overflow: auto;
+  border-radius: 25px;
+}
+.icon-bar-sb button{
+  float: right;
+  text-align: right;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 30px;
+  margin-right: 5%;
+  border: none;
+}
+@media screen and (max-width: 1000px) {
+  .second-box {
+    float: center;
+    display: block;
+    text-align: left;
+    width: 76%;
+    padding: 8px;
+  }
+}
