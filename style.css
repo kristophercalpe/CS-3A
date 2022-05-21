@@ -1,4 +1,4 @@
-body {margin:0; background-color: gray;}
+body {margin:0; background-color: #292929;}
 
 .icon-bar {
   width: 100%;
@@ -14,6 +14,7 @@ body {margin:0; background-color: gray;}
   transition: all 0.3s ease;
   color: white;
   font-size: 38px;
+  color: black;
 }
 
 .icon-bar a:hover {
@@ -21,11 +22,11 @@ body {margin:0; background-color: gray;}
 }
 
 .active {
-  background-color: hotpink;
+  background-color: #F10086;
 }
 
 .icon-bar-2 {
-  background-color: #2B1F27;
+  background-color: #171717;
   overflow: auto;
 }
 
@@ -38,33 +39,6 @@ body {margin:0; background-color: gray;}
   color: white;
   font-size: 38px;
 }
-
-.topnav input[type=text] {
-  float: right;
-  padding: 8px;
-  margin-top: 16px;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;
-  text-align: left;
-  width: 300px;
-}
-
-@media screen and (max-width: 600px) {
-  .topnav a, .topnav input[type=text] {
-    float: right;
-    display: block;
-    text-align: left;
-    width: 60%;
-    margin-top: 16px;
-    margin-right: 16px;
-    padding: 8px;
-  }
-  .topnav input[type=text] {
-    border: 1px solid #ccc;
-  }
-}
-
 .formDesign{
     position: absolute;
     margin-top:5%;
@@ -73,7 +47,7 @@ body {margin:0; background-color: gray;}
     height:200px;
     font-size: 35px;
 
-    
+
 }
 .formDesign2{
     position: absolute;
@@ -86,20 +60,20 @@ body {margin:0; background-color: gray;}
 
 .first-box{
   position:relative;
-  background-color: hotpink;
+  background-color: #F10086;
   margin-right: 50%;
   margin-left: 25%;
   height: 300px;
   width: 1000px;
-  border: 3px solid #555;
+  border: 6px solid #000000;
   border-radius: 25px;
   padding: 5px;
-  
+
 }
 
 .icon-bar-fb{
   width: 100%;
-  background-color: hotpink;
+  background-color: #F10086;
   overflow: auto;
   border-radius: 25px;
 }
@@ -111,11 +85,12 @@ body {margin:0; background-color: gray;}
   color: white;
   font-size: 30px;
   margin-left: 5%;
-
+  color: #000000;
+  font-family: 'Poppins', sans-serif;
 }
 
 .icon-bar-fb1{
-  background-color: hotpink;
+  background-color: #F10086;
   overflow: auto;
 }
 .icon-bar-fb1 a {
@@ -123,11 +98,11 @@ body {margin:0; background-color: gray;}
   text-align: left;
   padding: 22px 0;
   transition: all 0.3s ease;
-  color: white;
   font-size: 20px;
+  color: #000000;
 }
 .icon-bar-fb2{
-  background-color: hotpink;
+  background-color: #F10086;
   overflow: auto;
 }
 .icon-bar-fb2 a {
@@ -138,7 +113,9 @@ body {margin:0; background-color: gray;}
   color: white;
   font-size: 30px;
   margin-right: 5%;
+  color: #000000;
 }
+
 @media screen and (max-width: 1000px) {
   .first-box {
     float: center;
@@ -150,20 +127,20 @@ body {margin:0; background-color: gray;}
 }
 
 .second-box{
-  position: relative;  
-  background-color: hotpink;
+  position: relative;
+  background-color: #F10086;
   margin-right: 10%;
   margin-left: 25%;
   height: 300px;
   width: 1000px;
-  border: 3px solid #555;
+  border: 6px solid #000000;
   border-radius: 25px;
   padding: 5px;
 }
 
 .icon-bar-sb {
   width: 100%;
-  background-color: hotpink;
+  background-color: #F10086;
   overflow: auto;
   border-radius: 25px;
 }
@@ -186,4 +163,3 @@ body {margin:0; background-color: gray;}
     padding: 8px;
   }
 }
-
