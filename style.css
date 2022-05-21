@@ -1,3 +1,9 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+
 body {margin:0; background-color: gray;}
 
 .icon-bar {
@@ -186,3 +192,37 @@ body {margin:0; background-color: gray;}
     padding: 8px;
   }
 }
+
+</style>
+<body>
+
+<div class="icon-bar">
+  <a class="active" href="#"><i class="fa fa-fw fa-home"></i></a>
+<div class="icon-bar-2">
+  <a href="#"><i class="fa fa-user-o"></i></a> 
+  <a href="#"><i class="fa fa-navicon"></i></a>
+<div class="topnav">
+  <input type="text" placeholder="Search..">
+</div>
+</div>
+</div></div>
+<br>
+<div class="first-box">
+  <div class="icon-bar-fb">
+    <a class="active" href="#"><i class="fa fa-fw fa-user-circle-o"></i> Tricia Reynoso</a>
+  <div class="icon-bar-fb1">
+    <a href="#"><i class="fa fa-users"></i></a> 
+  <div class="icon-bar-fb2">
+    <a href="#"><i class="fa fa-ellipsis-h"></i></a> 
+    <a href="#"><i class="fa fa-close"></i></a>
+</div></div></div></div>
+<br>
+<div class="second-box">
+  <div class="icon-bar-sb">
+    <a class="active" href="#"><i class="fa fa-fw fa-upload"></i> POST</a>
+</div></div>
+
+<br><br>
+
+</body>
+</html>
