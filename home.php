@@ -31,7 +31,7 @@
 <br>
 
 <?php
-
+    // Details about Uploading Text
 if(isset($_POST['SUBMIT'])){
     $text=$_POST['texts'];
     ?>
