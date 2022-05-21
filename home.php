@@ -20,6 +20,7 @@
 
 <div class="second-box">    
   
+    // Details about Text Area
     <form action="" method ="POST">
         <textarea class = "formDesign"name="texts" id="" cols="30" rows="10"></textarea>
         <div class="icon-bar-sb">
