@@ -1,14 +1,8 @@
 <?php
 
+use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
-use App\Http\Controllers\PostController;
-use App\Http\Controllers\PostLikeController;
-use App\Http\Controllers\DashboardController;
-use App\Http\Controllers\Auth\LoginController;
-use App\Http\Controllers\Auth\LogoutController;
-use App\Http\Controllers\Auth\RegisterController;
-use App\Http\Controllers\UserController;
-use App\Http\Controllers\UserPostController;
+use Inertia\Inertia;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,49 +15,17 @@ use App\Http\Controllers\UserPostController;
 |
 */
 
-// Home
 Route::get('/', function () {
-    return view('home');
-})->name('home');
+    return Inertia::render('Welcome', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+});
 
+Route::get('/dashboard', function () {
+    return Inertia::render('Dashboard');
+})->middleware(['auth', 'verified'])->name('dashboard');
 
-// Dashboard
-Route::get('/dashboard', [
-    UserController::class, 'dashboard'
-]) -> name('dashboard') -> middleware('auth');
-
-//Login
-Route::get('/login', [LoginController::class, 'index']) -> name('login');
-Route::post('/login', [LoginController::class, 'store']);
-
-//Users
-Route::get('/users/{user:username}', [UserPostController::class, 'index']) -> name('users.posts');
-
-//Logout
-Route::post('/logout', [LogoutController::class, 'store']) -> name('logout');
-
-// Register 
-Route::get('/register', [
-    RegisterController::class, 'index'
-]) -> name('register') -> middleware('guest');
-Route::post('/register', [
-    RegisterController::class, 'store'
-]);
-
-// Posts
-Route::get('/posts', [PostController::class, 'index']) -> name('posts');
-Route::post('/posts', [PostController::class, 'store']);
-Route::delete('/posts/{post}/delete', [PostController::class, 'destroy'])->name('posts.delete');
-
-//Post Detail
-Route::get('/posts/{post}/', [PostController::class, 'show'])->name('posts.show');
-
-//Likes
-Route::post('/posts/{post}/likes', [PostLikeController::class, 'store']) -> name('posts.likes');
-Route::delete('/posts/{post}/likes', [PostLikeController::class, 'destroy']);
-
-// Friends
-Route::post('{user}/add_friend', 'UserController@addFriend') -> name('addFriend'); 
-
-
-
+require __DIR__.'/auth.php';
