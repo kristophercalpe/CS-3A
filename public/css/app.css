@@ -43,6 +43,7 @@ html {
 body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
+  
 }
 
 /*
@@ -1404,4 +1405,3 @@ select {
     padding-right: 2rem;
   }
 }
-
