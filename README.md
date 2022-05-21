@@ -1,1 +1,1 @@
-BSCS 3A Social Media
+BSCS 3A Social Media App (LiWANAG)
