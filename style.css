@@ -39,6 +39,34 @@ body {margin:0; background-color: #292929;}
   color: white;
   font-size: 38px;
 }
+
+.topnav input[type=text] {
+  float: right;
+  padding: 8px;
+  margin-top: 16px;
+  margin-right: 16px;
+  border: none;
+  font-size: 17px;
+  text-align: left;
+  width: 300px;
+}
+
+@media screen and (max-width: 600px) {
+  .topnav a, .topnav input[type=text] {
+    float: right;
+    display: block;
+    text-align: left;
+    width: 60%;
+    margin-top: 16px;
+    margin-right: 16px;
+    padding: 8px;
+  }
+  
+  .topnav input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
 .formDesign{
     position: absolute;
     margin-top:5%;
@@ -46,9 +74,8 @@ body {margin:0; background-color: #292929;}
     width: 80%;
     height:200px;
     font-size: 35px;
-
-
 }
+
 .formDesign2{
     position: absolute;
     margin-top:0%;
@@ -61,14 +88,13 @@ body {margin:0; background-color: #292929;}
 .first-box{
   position:relative;
   background-color: #F10086;
-  margin-right: 50%;
-  margin-left: 25%;
+  margin-right: 10%;
+  margin-left: 10%;
   height: 300px;
   width: 1000px;
   border: 6px solid #000000;
   border-radius: 25px;
   padding: 5px;
-
 }
 
 .icon-bar-fb{
@@ -77,6 +103,7 @@ body {margin:0; background-color: #292929;}
   overflow: auto;
   border-radius: 25px;
 }
+
 .icon-bar-fb a {
   float: left;
   text-align: left;
@@ -93,6 +120,7 @@ body {margin:0; background-color: #292929;}
   background-color: #F10086;
   overflow: auto;
 }
+
 .icon-bar-fb1 a {
   float: left;
   text-align: left;
@@ -101,10 +129,12 @@ body {margin:0; background-color: #292929;}
   font-size: 20px;
   color: #000000;
 }
+
 .icon-bar-fb2{
   background-color: #F10086;
   overflow: auto;
 }
+
 .icon-bar-fb2 a {
   float: right;
   text-align: left;
@@ -130,8 +160,8 @@ body {margin:0; background-color: #292929;}
   position: relative;
   background-color: #F10086;
   margin-right: 10%;
-  margin-left: 25%;
-  height: 300px;
+  margin-left: 10%;
+  height: 280px;
   width: 1000px;
   border: 6px solid #000000;
   border-radius: 25px;
@@ -154,6 +184,7 @@ body {margin:0; background-color: #292929;}
   margin-right: 5%;
   border: none;
 }
+
 @media screen and (max-width: 1000px) {
   .second-box {
     float: center;
@@ -161,5 +192,16 @@ body {margin:0; background-color: #292929;}
     text-align: left;
     width: 76%;
     padding: 8px;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+  .formDesign {
+    float: center;
+    display: block;
+    text-align: left;
+    width: 76%;
+    padding: 8px;
+    margin-top: 13%;
   }
 }
