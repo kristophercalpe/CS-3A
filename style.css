@@ -61,7 +61,6 @@ body {margin:0; background-color: #292929;}
     margin-right: 16px;
     padding: 8px;
   }
-  
   .topnav input[type=text] {
     border: 1px solid #ccc;
   }
@@ -74,8 +73,9 @@ body {margin:0; background-color: #292929;}
     width: 80%;
     height:200px;
     font-size: 35px;
-}
 
+
+}
 .formDesign2{
     position: absolute;
     margin-top:0%;
@@ -90,11 +90,12 @@ body {margin:0; background-color: #292929;}
   background-color: #F10086;
   margin-right: 10%;
   margin-left: 10%;
-  height: 300px;
+  height: 350px;
   width: 1000px;
   border: 6px solid #000000;
   border-radius: 25px;
   padding: 5px;
+
 }
 
 .icon-bar-fb{
@@ -103,7 +104,6 @@ body {margin:0; background-color: #292929;}
   overflow: auto;
   border-radius: 25px;
 }
-
 .icon-bar-fb a {
   float: left;
   text-align: left;
@@ -120,7 +120,6 @@ body {margin:0; background-color: #292929;}
   background-color: #F10086;
   overflow: auto;
 }
-
 .icon-bar-fb1 a {
   float: left;
   text-align: left;
@@ -129,12 +128,10 @@ body {margin:0; background-color: #292929;}
   font-size: 20px;
   color: #000000;
 }
-
 .icon-bar-fb2{
   background-color: #F10086;
   overflow: auto;
 }
-
 .icon-bar-fb2 a {
   float: right;
   text-align: left;
@@ -161,7 +158,7 @@ body {margin:0; background-color: #292929;}
   background-color: #F10086;
   margin-right: 10%;
   margin-left: 10%;
-  height: 280px;
+  height: 300px;
   width: 1000px;
   border: 6px solid #000000;
   border-radius: 25px;
@@ -184,7 +181,6 @@ body {margin:0; background-color: #292929;}
   margin-right: 5%;
   border: none;
 }
-
 @media screen and (max-width: 1000px) {
   .second-box {
     float: center;
@@ -204,4 +200,25 @@ body {margin:0; background-color: #292929;}
     padding: 8px;
     margin-top: 13%;
   }
+}
+
+.react{
+  width: 100%;
+  background-color: #F10086;
+  overflow: auto;
+}
+
+.react a {
+  float: left;
+  width: 13%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  color: black;
+  margin-left: 15%;
+}
+
+.react a:hover {
+  background-color: hotpink;
 }
