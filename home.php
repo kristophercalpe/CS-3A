@@ -21,9 +21,9 @@
 </div></div>
 <br>
 
-<div class="second-box">    
+<div class="second-box">
     <form action="" method ="POST">
-        <textarea class = "formDesign"name="texts" id="" cols="30" rows="10"></textarea>
+        <textarea class = "formDesign"name="texts" id="" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
         <div class="icon-bar-sb">
             <button class="active" name='SUBMIT' onclick="myFunction()"><i class="fa fa-fw fa-upload"></i>POST</button>
         </div>
@@ -47,13 +47,22 @@ if(isset($_POST['SUBMIT'])){
     </div>
     </div>
     </div>
+
 <?php
 
     echo "<textarea class = 'formDesign2'name='texts'  cols='30' rows='10'>$text</textarea>";
 }
 
-
 ?>
+
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<div class="react">
+  <a class="active" href="#"><i class="fa fa-heart-o"></i> Like</a>
+  <a class="active" href="#"><i class="fa fa-commenting-o"></i> Comment</a>
+  <a class="active" href="#"><i class="fa fa-share-square-o"></i> Share</a>
+
+</div>
 </div>
 
 
