@@ -25,7 +25,6 @@
     <form action="" method ="POST">
         <textarea class = "formDesign"name="texts" id="" cols="30" rows="10"></textarea>
         <div class="icon-bar-sb">
-          <div class="">
             <button class="active" name='SUBMIT' onclick="myFunction()"><i class="fa fa-fw fa-upload"></i>POST</button>
         </div>
     </form>
