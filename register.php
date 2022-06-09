@@ -24,9 +24,6 @@
     <label for="email"><b></b></label>
     <input type="text" placeholder="Email" name="email" id="email" required><br>
 
-    <label for="mobile number"><b></b></label>
-    <input type="text" placeholder="Mobile Number" name="mobile number" id="mobile number" required><br>
-
     <label for="psw"><b></b></label>
     <input type="password" placeholder="Password" name="psw" id="psw" required><br>
 
