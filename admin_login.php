@@ -1,6 +1,7 @@
 <?php
   require("connection.php");
 //Cannot open the file "connection.php is not found", only admin_login.php and database.sql were only posted (QA Mark and Joshua)?>
+
 <!DOCTYPE html>
 <html>
 <head>
