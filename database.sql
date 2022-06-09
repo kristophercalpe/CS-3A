@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 09, 2022 at 03:03 PM
+-- Generation Time: Jun 09, 2022 at 07:04 PM
 -- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.2
+-- PHP Version: 8.1.1
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -42,6 +42,21 @@ INSERT INTO `tbl_admin` (`admin_id`, `admin_fullname`, `admin_username`, `admin_
 (9, 'test', 'testuser', 'testpass'),
 (11, 'SAMPLE', 'Sampleuser', 'Samplepass');
 
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `tbl_user`
+--
+
+CREATE TABLE `tbl_user` (
+  `user_id` int(50) NOT NULL,
+  `user_fullname` text NOT NULL,
+  `user_username` varchar(50) NOT NULL,
+  `user_email` varchar(50) NOT NULL,
+  `user_contact` int(50) NOT NULL,
+  `user_password` varchar(50) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
 --
 -- Indexes for dumped tables
 --
@@ -53,6 +68,12 @@ ALTER TABLE `tbl_admin`
   ADD PRIMARY KEY (`admin_id`);
 
 --
+-- Indexes for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  ADD PRIMARY KEY (`user_id`);
+
+--
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -61,6 +82,12 @@ ALTER TABLE `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
   MODIFY `admin_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+
+--
+-- AUTO_INCREMENT for table `tbl_user`
+--
+ALTER TABLE `tbl_user`
+  MODIFY `user_id` int(50) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
