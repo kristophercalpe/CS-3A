@@ -108,7 +108,7 @@
 <script>
     function confirm_rem(admin_id){
         if(confirm("Are you sure, you want to delete this?")){
-            window.location.href="crud.php?rem="+admin_id;"
+            window.location.href="crud.php?rem="+admin_id;
         }
     }
 </script>
