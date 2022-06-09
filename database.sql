@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 22, 2022 at 10:35 AM
+-- Generation Time: Jun 09, 2022 at 03:03 PM
 -- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.1
+-- PHP Version: 8.1.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -39,32 +39,8 @@ CREATE TABLE `tbl_admin` (
 --
 
 INSERT INTO `tbl_admin` (`admin_id`, `admin_fullname`, `admin_username`, `admin_password`) VALUES
-(2, '', 'BSCS3A', 'admin123'),
-(5, 'Karla Marie Plaza', 'BSCS3A', 'admin123');
-
--- --------------------------------------------------------
-
---
--- Table structure for table `tbl_user`
---
-
-CREATE TABLE `tbl_user` (
-  `user_id` int(100) NOT NULL,
-  `user_fullname` varchar(100) NOT NULL,
-  `user_username` varchar(100) NOT NULL,
-  `user_email` varchar(100) NOT NULL,
-  `user_contact` int(100) NOT NULL,
-  `user_password` varchar(100) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-
---
--- Dumping data for table `tbl_user`
---
-
-INSERT INTO `tbl_user` (`user_id`, `user_fullname`, `user_username`, `user_email`, `user_contact`, `user_password`) VALUES
-(3, 'Calvin Abueva', 'CAbueva', 'calvinabueva@gmail.com', 2147483647, '12345'),
-(4, 'Walter White', 'WWhite', 'savewalterwhite.com', 2147483647, '123'),
-(5, 'Justin Bieber', 'JBieber', 'justin@gmail.com', 2147483647, '12');
+(9, 'test', 'testuser', 'testpass'),
+(11, 'SAMPLE', 'Sampleuser', 'Samplepass');
 
 --
 -- Indexes for dumped tables
@@ -77,12 +53,6 @@ ALTER TABLE `tbl_admin`
   ADD PRIMARY KEY (`admin_id`);
 
 --
--- Indexes for table `tbl_user`
---
-ALTER TABLE `tbl_user`
-  ADD PRIMARY KEY (`user_id`);
-
---
 -- AUTO_INCREMENT for dumped tables
 --
 
@@ -90,13 +60,7 @@ ALTER TABLE `tbl_user`
 -- AUTO_INCREMENT for table `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
-  MODIFY `admin_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
-
---
--- AUTO_INCREMENT for table `tbl_user`
---
-ALTER TABLE `tbl_user`
-  MODIFY `user_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `admin_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
