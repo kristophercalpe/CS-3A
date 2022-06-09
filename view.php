@@ -44,12 +44,8 @@
                 <input type="text" name="username" value="" class="form-control"><br>
             </div>
             <div class="form-group">
-                <label for="username">Email Address</label>
-                <input type="text" name="username" value="" class="form-control"><br>
-            </div>
-            <div class="form-group">
-                <label for="username">Mobile Number</label>
-                <input type="text" name="username" value="" class="form-control"><br>
+                <label for="email">Your Email Address</label>
+                <input type="text" name="email" value="" class="form-control"><br>
             </div>
             <div class="form-group">
                 <button type="submit" name="update" class="btn btn-success">Update</button>
