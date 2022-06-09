@@ -37,7 +37,7 @@ if (isset($_POST['submit'])) {
 
    	<link rel="preconnect" href="https://fonts.googleapis.com">
     	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   	<link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
+   	
 
 	<link rel="stylesheet" type="text/css" href="style.css">
 
@@ -46,17 +46,17 @@ if (isset($_POST['submit'])) {
 <body>
 	<div class="logform">
 		<form action="" method="POST" class="login-email">
-			<p class="login-text" style="font-size: 4rem; font-weight: 800;">liwanag</p>
+			<p class="login-text" style="font-size: 4rem; font-weight: 800;  font-family: 'Merienda One', cursive;  text-transform: lowercase;">liwanag</p>
 			<div class="input-group">
-				<input type="email" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
+				<input type="email" style="font-family:Sansita" placeholder="Email" name="email" value="<?php echo $email; ?>" required>
 			</div>
 			<div class="input-group">
-				<input type="password" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
+				<input type="password" style="font-family:Sansita" placeholder="Password" name="password" value="<?php echo $_POST['password']; ?>" required>
 			</div>
 			<div class="input-group">
-				<button name="submit" class="btn">Log in</button>
+				<button name="submit" class="btn" style="font-family:Sansita">Log in</button>
 			</div>
-			<p class="login-register-text">No Account? <a href="register.php">Register an Account.</a>.</p>
+			<p class="login-register-text" style="font-family:'Sansita';">No Account? <a href="register.php" style="font-family:Sansita">Register an Account.</a>.</p>
 		</form>
 	</div>
 </body>
