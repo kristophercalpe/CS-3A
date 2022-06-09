@@ -38,17 +38,7 @@ body {margin:0; background-color: #292929;}
   transition: all 0.3s ease;
   color: white;
   font-size: 38px;
-}
 
-.topnav input[type=text] {
-  float: right;
-  padding: 8px;
-  margin-top: 16px;
-  margin-right: 16px;
-  border: none;
-  font-size: 17px;
-  text-align: left;
-  width: 300px;
 }
 
 @media screen and (max-width: 600px) {
