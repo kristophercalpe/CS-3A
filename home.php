@@ -14,9 +14,6 @@
 <div class="icon-bar-2">
   <a href="#"><i class="fa fa-user-circle-o"></i></a> 
   <a href="#"><i class="fa fa-navicon"></i></a>
-<div class="topnav">
-  <input type="text" placeholder="Search...">
-</div>
 </div>
 </div></div>
 <br>
