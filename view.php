@@ -39,22 +39,23 @@ require("crud.php");
 
             <div class="form-group">
                 <label for="name">Your Full Name</label>
-                <input type="text" name="name" value="" class="form-control"><br>
+                <input type="text" name="fullname" id="editfullname" class="form-control"><br>
                 </div>
             <div class="form-group">
                 <label for="username">Your Username</label>
-                <input type="text" name="username" value="" class="form-control"><br>
+                <input type="text" name="username" id="editusername" class="form-control"><br>
             </div>
             <div class="form-group">
                 <label for="username">Email Address</label>
-                <input type="text" name="username" value="" class="form-control"><br>
+                <input type="text" name="email" id="editemail" class="form-control"><br>
             </div>
             <div class="form-group">
                 <label for="username">Mobile Number</label>
-                <input type="text" name="username" value="" class="form-control"><br>
+                <input type="text" name="contact" id="editcontact" class="form-control"><br>
             </div>
+            <input type="hidden" name="userID" id="edituserid">
             <div class="form-group">
-                <button type="submit" name="update" class="btn btn-success">Update</button>
+                <button type="submit" name="updateUser" class="btn btn-success">Update</button>
                 <a class="btn btn-primary" href="changepassword2.php">Password Change</a>
               </div>
         </form>
@@ -74,7 +75,7 @@ require("crud.php");
                 document.getElementById('editusername').value=`$fetch[user_username]`;
                 document.getElementById('editemail').value=`$fetch[user_email]`;
                 document.getElementById('editcontact').value=`$fetch[user_contact]`;
-                document.getElementById('editid').value=`$fetch[user_id]`;
+                document.getElementById('edituserid').value=`$fetch[user_id]`;
                 
                 </script>";
             }
