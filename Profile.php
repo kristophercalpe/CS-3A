@@ -53,9 +53,9 @@
                 <td>09784579245</td>
                 <div class >
                     <td>
-                        <a class = "btn btn-success " href="view.php">View</a>
+                        <a class = "btn btn-success " href="">View</a>
                         <a class = "btn btn-warning " href="view.php">Edit</a>
-                        <a class = "btn btn-danger "href="">Remove</a>
+                        <a class = "btn btn-danger "href="crud.php">Remove</a>
                     </td>
                 </div>
                 </tr>
@@ -77,7 +77,7 @@
                             <td>$fetch[user_contact]</td>
                             <td>
                         <a href="view.php?update=$fetch[user_id]" class="btn btn-warning me-2"> Edit</i></a>
-                        <button onclick="confirm_rem($fetch[user_id])" class="btn btn-danger"> Remove</i></button>
+                        <button onclick="confirm_rem1($fetch[user_id])" class="btn btn-danger"> Remove</i></button>
                             </td>
                         </tr>
                     tbl_user;
@@ -118,9 +118,9 @@
     </div>
     
     <script>
-    function confirm_rem(user_id){
+    function confirm_rem1(user_id){
         if(confirm("Are you sure, you want to delete this?")){
-            window.location.href="crud.php?rem="+user_id;"
+            window.location.href="crud.php?rem1="+user_id;
         }
     }
 </script>
