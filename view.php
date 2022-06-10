@@ -49,10 +49,6 @@ require("crud.php");
                 <label for="username">Email Address</label>
                 <input type="text" name="email" id="editemail" class="form-control"><br>
             </div>
-            <div class="form-group">
-                <label for="username">Mobile Number</label>
-                <input type="text" name="contact" id="editcontact" class="form-control"><br>
-            </div>
             <input type="hidden" name="userID" id="edituserid">
             <div class="form-group">
                 <button type="submit" name="updateUser" class="btn btn-success">Update</button>
@@ -74,7 +70,6 @@ require("crud.php");
                 document.getElementById('editfullname').value=`$fetch[user_fullname]`;
                 document.getElementById('editusername').value=`$fetch[user_username]`;
                 document.getElementById('editemail').value=`$fetch[user_email]`;
-                document.getElementById('editcontact').value=`$fetch[user_contact]`;
                 document.getElementById('edituserid').value=`$fetch[user_id]`;
                 
                 </script>";
