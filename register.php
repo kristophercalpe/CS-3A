@@ -11,7 +11,7 @@
 </head>
 <body>
 
-<form action="connection.php" method="post">
+<form action="Profile.php" method="post">
   <div class="container">
     <h1 class="liwanag">liwanag</h1>
 
