@@ -39,7 +39,7 @@
                 <th width="15%" scope="col">Full Name</th>
                 <th width="15%" scope="col">Username</th>
                 <th width="15%" scope="col">Email Address</th>
-                <th width="15%" scope="col">Mobile Number</th>
+                <th width="15%" scope="col">Mobile Number</th> //PLEASAE REMOVE "USER CONTACT" IF WILL NOT BE USED
                 <th width="20%" scope="col" class="rounded-end">Action</th>
                 </tr>
             </thead>
@@ -74,7 +74,7 @@
                             <td>$fetch[user_fullname]</td>
                             <td>$fetch[user_username]</td>
                             <td>$fetch[user_email]</td>
-                            <td>$fetch[user_contact]</td>
+                            <td>$fetch[user_contact]</td>   //PLEASAE REMOVE "USER CONTACT" IF WILL NOT BE USED
                             <td>
                         <a href="view.php?update=$fetch[user_id]" class="btn btn-warning me-2"> Edit</i></a>
                         <button onclick="confirm_rem1($fetch[user_id])" class="btn btn-danger"> Remove</i></button>
@@ -83,7 +83,6 @@
                     tbl_user;
                     $i++;
                 }
-
                 ?>
             </tbody>
         </table>
