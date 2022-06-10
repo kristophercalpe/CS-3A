@@ -105,6 +105,14 @@
                     <input type="text" class="form-control" name="name" required>
                 </div>
                 <div class="input-group mb-3">
+                    <span class="input-group-text">Email</span>
+                    <input type="text" class="form-control" name="email" required>
+                </div>
+                <div class="input-group mb-3">
+                    <span class="input-group-text">Mobile Number</span>
+                    <input type="text" class="form-control" name="contact" required>
+                </div>
+                <div class="input-group mb-3">
                     <span class="input-group-text">Password</span>
                     <input type="text" class="form-control" name="password" required>
                 </div>
