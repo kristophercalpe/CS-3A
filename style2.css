@@ -6,7 +6,7 @@ body {
 	font-family: 'Merienda One', sans-serif;
 }
 header {
-	background-color:#040000;
+	background-color:#33002e;
 	height: 100vh;
 	-webkit-background-size: cover;
 	background-size: cover;
@@ -46,7 +46,7 @@ header {
 }
 .welcome-text a:hover {
 	background: #fff;
-	color: #040000;
+	color: #333;
 }
 /*resposive*/
 
