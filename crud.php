@@ -105,13 +105,13 @@
             $_POST[$key]=mysqli_real_escape_string($con, $value);
         }
 
-        $query = "SELECT * FROM `tbl_user` WHERE `user_id` = '$_POST[userID]'";
+        $query = "SELECT * FROM tbl_user WHERE user_id = '$_POST[userID]'";
         $result=mysqli_query($con, $query);
         $fetch=mysqli_fetch_assoc($result);
 
-        $update="UPDATE `tbl_user` SET `user_fullname`='$_POST[fullname]', `user_username`='$_POST[username]', `user_email`='$_POST[email]', `user_contact`='$_POST[contact]', WHERE `user_id` = '$_POST[userID]' ";
+        $userupdate="UPDATE tbl_user SET user_fullname='$_POST[fullname]', user_username='$_POST[username]', user_email='$_POST[email]', user_contact='$_POST[contact]' WHERE user_id = '$_POST[userID]'";
 
-        if(mysqli_query($con, $update))
+        if(mysqli_query($con, $userupdate))
         {
             header("location: Profile.php?success=updated");
         }
