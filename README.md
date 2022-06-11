@@ -3,7 +3,7 @@ BSCS 3A LiWANAG Social Media
 Duplicate your dot (.) files, Vendor and node_modules folders from Laravel.
 
 
-<b>June 11, 2022 5:40 PM PHT</b><br>
+<strong>June 11, 2022 5:40 PM PHT</strong><br>
 - UserManagement Update: Done
 - Registration Page: Done
 
