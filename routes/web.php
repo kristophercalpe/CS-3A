@@ -29,3 +29,32 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+
+Route::get('/adminlogin', function () {
+    return view('admin');
+});
+
+Route::get('/adminpanel', function () {
+    return view('adminpanel');
+});
+
+Route::get('/edit', function () {
+    return view('edit');
+});
+
+Route::get('/changepassword', function () {
+    return view('changepassword');
+});
+
+Route::get('/profile', function () {
+    return view('profile');
+});
+
+Route::get('/view', function () {
+    return view('view');
+});
+
+Route::get('/changepassword2', function () {
+    return view('changepassword2');
+});
