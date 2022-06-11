@@ -67,7 +67,7 @@
             $_POST[$key]=mysqli_real_escape_string($con, $value);
         }
 
-        $query ="INSERT INTO `tbl_user`(`user_fullname`, `user_username`, `user_email`,`user_password`) VALUES ('$_POST[fullname]', '$_POST[username]', '$_POST[email]', '$_POST[psw]')";
+        $query ="INSERT INTO `tbl_user`(`user_fullname`, `user_username`, `user_email`,`user_password`) VALUES ('$_POST[fullname]', '$_POST[username]', '$_POST[email]', '$_POST[password]')";
 
         if (mysqli_query($con, $query))
         {
