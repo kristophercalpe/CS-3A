@@ -33,7 +33,7 @@
     <label for="psw-repeat"><b></b></label>
     <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required><br>
   
-    <button type="submit" class="registerbtn">Register</button>
+    <button type="submit" name="addnewuser" class="registerbtn">Register</button>
   </div>
   
   <div class="signin">
