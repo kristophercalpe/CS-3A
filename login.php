@@ -1,13 +1,11 @@
 <?php 
 
-include 'config.php';
-
 session_start();
 
 error_reporting(0);
 
 if (isset($_SESSION['username'])) {
-    header("Location: welcome.php");
+    header("Location: welcome");
 }
 
 if (isset($_POST['submit'])) {
@@ -53,7 +51,7 @@ if (isset($_POST['submit'])) {
 			<div class="input-group">
 				<button name="submit" class="btn" style="font-family:Sansita">Log in</button>
 			</div>
-			<p class="login-register-text" style="font-family:'Sansita';">No Account? <a href="register.php" style="font-family:Sansita">Register an Account.</a>.</p>
+			<p class="login-register-text" style="font-family:'Sansita';">No Account? <a href="register" style="font-family:Sansita">Register an Account.</a>.</p>
 		</form>
 	</div>
 </body>
