@@ -43,20 +43,6 @@
                 </tr>
             </thead>
             <tbody class="bg-white">
-
-                <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>MarkOtto@gmail.com</td>
-                <div class >
-                    <td>
-                        <a class = "btn btn-success " href="">View</a>
-                        <a class = "btn btn-warning " href="view.php">Edit</a>
-                        <a class = "btn btn-danger "href="crud.php">Remove</a>
-                    </td>
-                </div>
-                </tr>
                 
                 <?php
 
