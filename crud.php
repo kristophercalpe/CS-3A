@@ -1,6 +1,5 @@
 <?php
     require ("connection.php");
-
     if (isset($_POST['addnewadmin']))
     {
         foreach($_POST as $key => $value)
@@ -68,7 +67,7 @@
             $_POST[$key]=mysqli_real_escape_string($con, $value);
         }
 
-        $query ="INSERT INTO `tbl_user`(`user_fullname`, `user_username`, `user_email`, `user_contact`, `user_password`) VALUES ('$_POST[fullname]', '$_POST[username]', '$_POST[email]', '$_POST[contact]', '$_POST[password]')";
+        $query ="INSERT INTO `tbl_user`(`user_fullname`, `user_username`, `user_email`,`user_password`) VALUES ('$_POST[fullname]', '$_POST[username]', '$_POST[email]', '$_POST[psw]')";
 
         if (mysqli_query($con, $query))
         {
