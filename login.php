@@ -7,8 +7,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
 
    	<link rel="stylesheet" type="text/css" href="login.css">
-
-<title>Log in</title>
 </head>
 <body>
 	<div class="logform">
