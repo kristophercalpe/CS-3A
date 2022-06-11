@@ -34,7 +34,7 @@ if (isset($_POST['submit'])) {
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
     	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-   	<link rel="stylesheet" type="text/css" href="style.css">
+   	<link rel="stylesheet" type="text/css" href="login.css">
 
 <title>Log in</title>
 </head>
