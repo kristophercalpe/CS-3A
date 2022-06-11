@@ -5,7 +5,7 @@
     <title>Landing Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="login.php">
-    <link rel="stylesheet" href="landing.css">    
+    <link rel="stylesheet" href="welcome.css">    
 </head>
 <body>
     <header>
