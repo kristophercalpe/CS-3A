@@ -24,11 +24,11 @@
     <label for="email"><b></b></label>
     <input type="text" placeholder="Email" name="email" id="email" required><br>
 
-    <label for="mobile number"><b></b></label>
-    <input type="text" placeholder="Mobile Number" name="mobilenumber" id="mobilenumber" required><br>
+    <!--<label for="mobile number"><b></b></label>
+    <input type="text" placeholder="Mobile Number" name="mobilenumber" id="mobilenumber" required><br>-->
 
-    <label for="psw"><b></b></label>
-    <input type="password" placeholder="Password" name="psw" id="psw" required><br>
+    <label for="password"><b></b></label>
+    <input type="password" placeholder="Password" name="password" id="password" required><br>
 
     <label for="psw-repeat"><b></b></label>
     <input type="password" placeholder="Confirm Password" name="psw-repeat" id="psw-repeat" required><br>
