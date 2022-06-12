@@ -1,5 +1,11 @@
 <?php
-    require ("connection.php");
+     $con=mysqli_connect("localhost","root","","database");
+
+    if(mysqli_connect_error())
+    {
+        echo "Cannot Connect";
+    }
+    
     if (isset($_POST['addnewadmin']))
     {
         foreach($_POST as $key => $value)
