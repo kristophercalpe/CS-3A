@@ -1,3 +1,7 @@
+<?php
+    require("crud.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -5,31 +9,24 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- Styles -->
+    <title>Admin</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
-
-    <!-- Script -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-   
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
 </head>
 <body class="bg-light">
 
     <div class="container bg-dark text-light p-3 rounded my-4">
         <div class="d-flex align-items-center justify-content-between px-3">
-
         <h2>ADMIN PANEL</h2>
-
              <form class="form-inline">
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addnewadmin">
                 <i class="bi bi-plus-lg"></i> Create New Admin
                 </button>
-                <button type="button" class="btn btn-success">
-                <i class="bi bi-people"><a href="profile" class="text-light" style="text-decoration:none; property"></i> User List </a>
+                <button onclick="location.href='Profile.php'" type="button" class="btn btn-success">
+                <i class="bi bi-people"></i> User List
                 </button>
-                <button type="button" class="btn btn-success">
+                <button onclick="location.href='admin_login.php'" type="button" class="btn btn-success">
                 <i class="bi bi-box-arrow-in-right"></i> Logout
                 </button>
             </form>
@@ -49,15 +46,30 @@
             </thead>
             <tbody class="bg-white">
 
-                <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>
-                    <a class="btn btn-warning me-2" href="edit"> Edit</a>
-                    <button class="btn btn-danger"> Remove</button>
-                </td>
-                </tr>
+            <?php
+
+            $query="SELECT * FROM `tbl_admin`";
+            $result=mysqli_query($con,$query);
+            $i=1;
+
+            while($fetch=mysqli_fetch_assoc($result))
+            {
+                echo<<<tbl_admin
+                    <tr>
+                        <th scope="row">$i</th>
+                        <td>$fetch[admin_fullname]</td>
+                        <td>$fetch[admin_username]</td>
+                        <td>
+                    <a href="edit.php?update=$fetch[admin_id]" class="btn btn-warning me-2"> Edit</i></a>
+                    <button onclick="confirm_rem($fetch[admin_id])" class="btn btn-danger"> Remove</i></button>
+                        </td>
+                    </tr>
+                tbl_admin;
+                $i++;
+            }
+
+            ?>
+    
             </tbody>
         </table>
     </div>
@@ -93,8 +105,15 @@
     </div>
 </div>
 
+<script>
+    function confirm_rem(admin_id){
+        if(confirm("Are you sure, you want to delete this?")){
+            window.location.href="crud.php?rem="+admin_id;
+        }
+    }
+</script>
 
 
 </body>
 </html>
-    
+   
