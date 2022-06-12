@@ -54,13 +54,6 @@ if(isset($_POST['SUBMIT'])){
 
 <br><br><br><br><br><br><br><br><br><br><br><br>
 
-<div class="react">
-  <a class="active" href="#"><i class="fa fa-heart-o"></i> Like</a>
-  <a class="active" href="#"><i class="fa fa-commenting-o"></i> Comment</a>
-  <a class="active" href="#"><i class="fa fa-share-square-o"></i> Share</a>
-
-</div>
-</div>
 
 
 <br><br>
