@@ -35,11 +35,11 @@
         $query="DELETE FROM `tbl_admin` WHERE `admin_id`='$_GET[rem]'";
         if(mysqli_query($con, $query))
         {
-            header("location: admin_panel.php?success=removed");
+            header("location: adminpanel?success=removed");
         }
         else
         {
-            header("location: admin_panel.php?success=remove_failed");
+            header("location: adminpanel?success=remove_failed");
         }
     }
 
@@ -173,7 +173,7 @@
 <script>
     function confirm_rem(admin_id){
         if(confirm("Are you sure, you want to delete this?")){
-            window.location.href="crud.php?rem="+admin_id;
+            window.location.href="adminpanel?rem="+admin_id;
         }
     }
 </script>
