@@ -35,6 +35,10 @@ Route::get('/adminlogin', function () {
     return view('admin');
 });
 
+Route::get('/adminlogin', function () {
+    return view::make('pages.welcome');
+});
+
 Route::get('/adminpanel', function () {
     return view('adminpanel');
 });
