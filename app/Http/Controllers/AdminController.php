@@ -11,12 +11,11 @@ class AdminController extends Controller
     {
         $tbl_admin = new Admin;
 
+        //table name->column name = $request->name of input fields
         $tbl_admin->admin_fullname = $request->fullname;
         $tbl_admin->admin_username = $request->name;
         $tbl_admin->admin_password = $request->password;
         $tbl_admin->save();
         return redirect('/adminpanel');
-
-        // dd($request->fullname);
     }
 }
