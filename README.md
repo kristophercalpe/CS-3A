@@ -10,3 +10,4 @@ Duplicate your dot (.) files, Vendor and node_modules folders from Laravel.
 Bugs:
 - Add database for Registration Page
 - Connect database for Registration page, adminlogin, adminpanel, edit, changepassword, profile, and view.
+- Add database for image upload.
