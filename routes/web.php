@@ -3,6 +3,7 @@
 use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
+use App\Http\Controllers\AdminController;
 
 /*
 |--------------------------------------------------------------------------
@@ -62,3 +63,5 @@ Route::get('/view', function () {
 Route::get('/changepassword2', function () {
     return view('changepassword2');
 });
+
+Route::post('/admin-store',[AdminController::class,'store']);
