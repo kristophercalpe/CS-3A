@@ -45,6 +45,10 @@ Route::get('/edit', function () {
     return view('edit');
 });
 
+Route::get('/', function () {
+    return View::make('pages.welcome');
+});
+
 Route::get('/changepassword', function () {
     return view('changepassword');
 });
