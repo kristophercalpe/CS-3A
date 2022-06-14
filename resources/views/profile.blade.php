@@ -125,7 +125,7 @@
                             <td>$fetch[user_username]</td>
                             <td>$fetch[user_email]</td>
                             <td>
-                        <a href="view.php?update=$fetch[user_id]" class="btn btn-warning me-2"> Edit</i></a>
+                        <a href="view?update=$fetch[user_id]" class="btn btn-warning me-2"> Edit</i></a>
                         <button onclick="confirm_rem1($fetch[user_id])" class="btn btn-danger"> Remove</i></button>
                             </td>
                         </tr>
