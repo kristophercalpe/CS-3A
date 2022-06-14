@@ -90,7 +90,7 @@
         <i class="bi bi-plus-lg"></i> Create New User
         </button>
         <button type="button" class="btn btn-success">
-                <i class="bi bi-box-arrow-in-right"><a href="admin_panel.php" class="text-light" style="text-decoration:none; property"></i> Back</a>
+                <i class="bi bi-box-arrow-in-right"><a href="adminpanel" class="text-light" style="text-decoration:none; property"></i> Back</a>
                 </button>
             </form>
             </div>
