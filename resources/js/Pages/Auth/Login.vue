@@ -7,7 +7,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
 
-<link href="login.css" rel="stylesheet">
+<link href="/css/login.css" rel="stylesheet">
 
 </head>
 
