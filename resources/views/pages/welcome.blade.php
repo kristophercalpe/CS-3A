@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <title>Landing Page</title>
     <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="login.php">
-    <link rel="stylesheet" href="welcome.css">    
+    <link rel="stylesheet" href="login">
+     <link href="/css/welcome.css" rel="stylesheet">  
 </head>
 <body>
     <header>
@@ -21,8 +21,8 @@
          document.querySelector("header").style.background = color[i]
      })
      </script>
-<a href="login.php">Login</a>
-<a href="register.php">Register</a>
+<a href="login">Login</a>
+<a href="register">Register</a>
     </div>
 </header>
 </body>
