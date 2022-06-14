@@ -173,7 +173,7 @@
     <script>
     function confirm_rem1(user_id){
         if(confirm("Are you sure, you want to delete this?")){
-            window.location.href="crud.php?rem1="+user_id;
+            window.location.href="profile?rem1="+user_id;
         }
     }
 </script>
