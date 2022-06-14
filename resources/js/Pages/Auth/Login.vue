@@ -24,7 +24,7 @@
   </div>
   
   <div class="register">
-    <p>Already have an account? <a href="register.php">Register now.</a></p>
+    <p>Already have an account? <a href="register">Register now.</a></p>
   </div>
   
  
