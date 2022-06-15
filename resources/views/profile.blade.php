@@ -21,7 +21,7 @@
         <i class="bi bi-plus-lg"></i> Create New User
         </button>
         <button type="button" class="btn btn-success">
-                <i class="bi bi-box-arrow-in-right"><a href="adminpanel" class="text-light" style="text-decoration:none; property"></i> Back</a>
+                <i class="bi bi-box-arrow-in-right"><a href="/adminpanel" class="text-light" style="text-decoration:none; property"></i> Back</a>
                 </button>
             </form>
             </div>
@@ -40,37 +40,23 @@
                 </tr>
             </thead>
             <tbody class="bg-white">
-                
-                <?php
-
-                $query="SELECT * FROM `tbl_user`";
-                $result=mysqli_query($con, $query);
-                $i=1;
-
-                while($fetch=mysqli_fetch_assoc($result))
-                {
-                    echo<<<tbl_user
-                        <tr>
-                            <th scope="row">$i</th>
-                            <td>$fetch[user_fullname]</td>
-                            <td>$fetch[user_username]</td>
-                            <td>$fetch[user_email]</td>
-                            <td>
-                        <a href="view?update=$fetch[user_id]" class="btn btn-warning me-2"> Edit</i></a>
-                        <button onclick="confirm_rem1($fetch[user_id])" class="btn btn-danger"> Remove</i></button>
-                            </td>
-                        </tr>
-                    tbl_user;
-                    $i++;
-                }
-
-                ?>
+                     @foreach($users as $user)
+                     <th scope="row">{{$loop->index+1}}</th>
+                     <td>{{$user->user_fullname}}</td>
+                     <td>{{$user->user_username}}</td>
+                     <td>{{$user->user_email}}</td>
+                     <td><a href="{{url('user/'.$user->user_id.'/edit')}}" class="btn btn-warning me-2"> Edit</i></a>
+                     <a href="/user-delete/{{$user->user_id}}" class="btn btn-danger">Remove</i></a>
+                 </td>
+                 </tr>
+                 @endforeach  
             </tbody>
         </table>
     </div>         
     <div class="modal fade" id="addnewuser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <form action="" method="POST">
+       <form action="{{url('user')}}" method="POST">
+        @csrf
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">Add New User</h5>
@@ -78,19 +64,19 @@
             <div class="modal-body">
             <div class="input-group mb-3">
                     <span class="input-group-text">Full Name</span>
-                    <input type="text" class="form-control" name="fullname" required>
+                    <input type="text" class="form-control" name="fullname">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text">Username</span>
-                    <input type="text" class="form-control" name="username" required>
+                    <input type="text" class="form-control" name="username">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text">Email Address</span>
-                    <input type="text" class="form-control" name="email" required>
+                    <input type="text" class="form-control" name="email">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text">Password</span>
-                    <input type="text" class="form-control" name="password" required>
+                    <input type="text" class="form-control" name="password">
                 </div>
             </div>
             <div class="modal-footer">
