@@ -88,9 +88,11 @@
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addnewadmin">
                 <i class="bi bi-plus-lg"></i> Create New Admin
                 </button>
+                <!-- remove .php on href Profile.php -->
                 <button onclick="location.href='Profile.php'" type="button" class="btn btn-success">
                 <i class="bi bi-people"></i> User List
                 </button>
+                <!-- remove .php on href admin_login.php -->
                 <button onclick="location.href='admin_login.php'" type="button" class="btn btn-success">
                 <i class="bi bi-box-arrow-in-right"></i> Logout
                 </button>
