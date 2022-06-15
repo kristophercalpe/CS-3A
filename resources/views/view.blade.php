@@ -23,10 +23,10 @@
 
              <form class="form-inline">
              <button type="button" class="btn btn-success">
-                <i class="bi bi-plus-lg"><a href="profile" class="text-light" style="text-decoration:none; property"></i> User List</a>
+                <i class="bi bi-plus-lg"><a href="/profile" class="text-light" style="text-decoration:none; property"></i> User List</a>
                 </button>
                 <button type="button" class="btn btn-success">
-                <i class="bi bi-box-arrow-in-right"><a href="profile" class="text-light" style="text-decoration:none; property"></i> Back</a>
+                <i class="bi bi-box-arrow-in-right"><a href="/profile" class="text-light" style="text-decoration:none; property"></i> Back</a>
                 </button>
             </form>
         </div>
@@ -39,30 +39,32 @@
         </div>
         <div class="card-body">
 
-        <form class="" action="" method="POST">
-
+        <form action="{{url('user/'.$user->user_id)}}" method="POST">
+        @csrf
+            @method('PUT')
             <div class="form-group">
-                <label for="name">Your Full Name</label>
-                <input type="text" name="name" value="" class="form-control"><br>
+                <label for="fullname">Your Full Name</label>
+                <input type="text" name="fullname" value="{{$user->user_fullname}}" class="form-control"><br>
                 </div>
             <div class="form-group">
                 <label for="username">Your Username</label>
-                <input type="text" name="username" value="" class="form-control"><br>
+                <input type="text" name="username" value="{{$user->user_username}}" class="form-control"><br>
             </div>
             <div class="form-group">
-                <label for="username">Email Address</label>
-                <input type="text" name="username" value="" class="form-control"><br>
+                <label for="email">Email Address</label>
+                <input type="text" name="email" value="{{$user->user_email}}" class="form-control"><br>
             </div>
             <div class="form-group">
-                <button type="submit" name="update" class="btn btn-success">Update</button>
-                <a class="btn btn-primary" href="changepassword2">Password Change</a>
+                <label for="password">Password</label>
+                <input type="text" name="password" value="{{$user->user_password}}" class="form-control"><br>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn btn-success">Update</button>
               </div>
         </form>
         </div>
     </div>
-
 </div>
-
 </body>
 </html>
 
