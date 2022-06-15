@@ -127,7 +127,7 @@
                         <td>$fetch[admin_fullname]</td>
                         <td>$fetch[admin_username]</td>
                         <td>
-                        <!-- remove .php on href edit.php -->
+                    //remove .php on href edit.php
                     <a href="edit.php?update=$fetch[admin_id]" class="btn btn-warning me-2"> Edit</i></a>
                     <button onclick="confirm_rem($fetch[admin_id])" class="btn btn-danger"> Remove</i></button>
                         </td>
