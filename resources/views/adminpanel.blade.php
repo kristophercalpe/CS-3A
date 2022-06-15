@@ -1,29 +1,3 @@
-<?php
-     $con=mysqli_connect("localhost","root","","database");
-
-    if(mysqli_connect_error())
-    {
-        echo "Cannot Connect";
-    }
-
-    if(isset($_GET['rem']) && $_GET['rem']>0)
-    {
-        $query = "SELECT * FROM `tbl_admin` WHERE `admin_id` = '$_GET[rem]'";
-        $result=mysqli_query($con, $query);
-        $fetch=mysqli_fetch_assoc($result);
-
-        $query="DELETE FROM `tbl_admin` WHERE `admin_id`='$_GET[rem]'";
-        if(mysqli_query($con, $query))
-        {
-            header("location: adminpanel?success=removed");
-        }
-        else
-        {
-            header("location: adminpanel?success=remove_failed");
-        }
-    }
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -125,14 +99,5 @@
         </form>
     </div>
 </div>
-
-<script>
-    function confirm_rem(admin_id){
-        if(confirm("Are you sure, you want to delete this?")){
-            window.location.href="adminpanel?rem="+admin_id;
-        }
-    }
-</script>
-
 </body>
 </html>
