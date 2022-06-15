@@ -41,19 +41,23 @@
         </div>
         <div class="card-body">
 
-        <form class="" action="" method="POST">
-
+        <form action="{{url('admin/'.$admin->admin_id)}}" method="POST">
+        @csrf
+            @method('PUT')
             <div class="form-group">
                 <label for="name">Your Full Name</label>
-                <input type="text" name="name" value="" class="form-control"><br>
+                <input type="text" name="fullname" value="{{$admin->admin_fullname}}" class="form-control"><br>
                 </div>
             <div class="form-group">
                 <label for="username">Your Username</label>
-                <input type="text" name="username" value="" class="form-control"><br>
+                <input type="text" name="name" value="{{$admin->admin_username}}" class="form-control"><br>
             </div>
             <div class="form-group">
-                <button type="submit" name="update" class="btn btn-success">Update</button>
-                <a class="btn btn-primary" href="changepassword">Password Change</a>
+                <label for="password">Your Password</label>
+                <input type="text" name="name" value="{{$admin->admin_password}}" class="form-control"><br>
+            </div>
+            <div class="form-group">
+                <button type="submit" name="password" class="btn btn-success">Update</button>
               </div>
         </form>
          </div>
