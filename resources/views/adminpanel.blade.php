@@ -106,15 +106,15 @@
             <div class="modal-body">
             <div class="input-group mb-3">
                     <span class="input-group-text">Full Name</span>
-                    <input type="text" class="form-control" name="fullname" required>
+                    <input type="text" class="form-control" name="fullname">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text">Username</span>
-                    <input type="text" class="form-control" name="name" required>
+                    <input type="text" class="form-control" name="name">
                 </div>
                 <div class="input-group mb-3">
                     <span class="input-group-text">Password</span>
-                    <input type="text" class="form-control" name="password" required>
+                    <input type="text" class="form-control" name="password">
                 </div>
             </div>
             <div class="modal-footer">
