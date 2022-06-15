@@ -36,10 +36,7 @@ Route::get('/adminlogin', function () {
     return view('admin');
 });
 
-
-Route::get('/adminpanel', function () {
-    return view('adminpanel');
-});
+Route::get('/adminpanel', [AdminController::class,'index']);
 
 Route::get('/edit', function () {
     return view('edit');
@@ -65,4 +62,10 @@ Route::get('/changepassword2', function () {
     return view('changepassword2');
 });
 
+Route::resource('admin', App\Http\Controllers\AdminController::class);
+
 Route::post('/admin-store',[AdminController::class,'store']);
+
+Route::get('/admin-delete/{admin_id}',[AdminController::class,'delete']);
+
+Route::post('/admin-login',[AdminController::class,'login']);
