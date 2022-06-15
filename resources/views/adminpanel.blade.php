@@ -112,32 +112,15 @@
                 </tr>
             </thead>
             <tbody class="bg-white">
-
-            <?php
-
-            $query="SELECT * FROM `tbl_admin`";
-            $result=mysqli_query($con,$query);
-            $i=1;
-
-            while($fetch=mysqli_fetch_assoc($result))
-            {
-                echo<<<tbl_admin
-                    <tr>
-                        <th scope="row">$i</th>
-                        <td>$fetch[admin_fullname]</td>
-                        <td>$fetch[admin_username]</td>
-                        <td>
-                    //remove .php on href edit.php
-                    <a href="edit.php?update=$fetch[admin_id]" class="btn btn-warning me-2"> Edit</i></a>
-                    <button onclick="confirm_rem($fetch[admin_id])" class="btn btn-danger"> Remove</i></button>
-                        </td>
-                    </tr>
-                tbl_admin;
-                $i++;
-            }
-
-            ?>
-    
+                 @foreach($admins as $admin)
+                 <th scope="row">{{$loop->index+1}}</th>
+                 <td>{{$admin->admin_fullname}}</td>
+                 <td>{{$admin->admin_username}}</td>
+                 <td><a href="" class="btn btn-warning me-2"> Edit</i></a>
+                 <a href="/admin-delete/{{$admin->admin_id}}" class="btn btn-danger">Remove</i></a>
+                 </td>
+                 </tr>
+                 @endforeach  
             </tbody>
         </table>
     </div>
@@ -145,7 +128,7 @@
 
     <div class="modal fade" id="addnewadmin" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
-        <form action="/admin-store" method="POST">
+        <form action="{{url('admin')}}" method="POST">
         @csrf
         <div class="modal-content">
             <div class="modal-header">
@@ -185,4 +168,3 @@
 
 </body>
 </html>
-   
