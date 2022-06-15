@@ -88,7 +88,7 @@
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addnewadmin">
                 <i class="bi bi-plus-lg"></i> Create New Admin
                 </button>
-                <!-- remove .php on href Profile.php -->
+                <!-- remove .php on href Profile.php ang make capital "P" to small "p" -->
                 <button onclick="location.href='Profile.php'" type="button" class="btn btn-success">
                 <i class="bi bi-people"></i> User List
                 </button>
