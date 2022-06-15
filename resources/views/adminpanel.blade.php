@@ -99,7 +99,19 @@
             </form>
         </div>
     </div>
+     <div class="container mt-5 p-0">
+         @if($errors->any())
+             <ul class="alert alert-warning">
+                 @foreach($errors->all() as $error)
+                 <li>{{$error}}</li>
+                 @endforeach
+             </ul>
+        @endif
 
+        @if(session('message'))
+            <h5>{{session('message')}}</h5>
+       @endif
+     </div>
 
     <div class="container mt-5 p-0">
          <table class="table table-hover text-center">
