@@ -89,11 +89,11 @@
                 <i class="bi bi-plus-lg"></i> Create New Admin
                 </button>
                 <!-- remove .php on href Profile.php ang make capital "P" to small "p" -->
-                <button onclick="location.href='Profile.php'" type="button" class="btn btn-success">
+                <button onclick="location.href='/profile'" type="button" class="btn btn-success">
                 <i class="bi bi-people"></i> User List
                 </button>
                 <!-- remove .php on href admin_login.php -->
-                <button onclick="location.href='admin_login.php'" type="button" class="btn btn-success">
+                <button onclick="location.href=''" type="button" class="btn btn-success">
                 <i class="bi bi-box-arrow-in-right"></i> Logout
                 </button>
             </form>
