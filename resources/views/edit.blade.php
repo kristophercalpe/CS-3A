@@ -67,10 +67,10 @@
             <!-- misplaced name for password and submit button -->
             <div class="form-group">
                 <label for="password">Your Password</label>
-                <input type="text" name="name" value="{{$admin->admin_password}}" class="form-control"><br>
+                <input type="text" name="password" value="{{$admin->admin_password}}" class="form-control"><br>
             </div>
             <div class="form-group">
-                <button type="submit" name="password" class="btn btn-success">Update</button>
+                <button type="submit" class="btn btn-success">Update</button>
               </div>
         </form>
          </div>
