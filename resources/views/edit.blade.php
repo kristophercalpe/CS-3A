@@ -64,7 +64,7 @@
                 <label for="username">Your Username</label>
                 <input type="text" name="name" value="{{$admin->admin_username}}" class="form-control"><br>
             </div>
-            <!-- misplaced name for password and submit button -->
+            
             <div class="form-group">
                 <label for="password">Your Password</label>
                 <input type="text" name="password" value="{{$admin->admin_password}}" class="form-control"><br>
