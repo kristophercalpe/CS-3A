@@ -30,6 +30,7 @@
     <p>No account? <a href="register.php">Register now.</a></p>
   </div>
   
+  //no error and has been checked by the QA
   //ready to deploy
 
 </body>
