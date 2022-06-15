@@ -57,11 +57,11 @@
         @csrf
             @method('PUT')
             <div class="form-group">
-                <label for="name">Your Full Name</label>
+                <label for="fullname">Your Full Name</label>
                 <input type="text" name="fullname" value="{{$admin->admin_fullname}}" class="form-control"><br>
                 </div>
             <div class="form-group">
-                <label for="username">Your Username</label>
+                <label for="name">Your Username</label>
                 <input type="text" name="name" value="{{$admin->admin_username}}" class="form-control"><br>
             </div>
             
@@ -76,6 +76,5 @@
          </div>
     </div>
 </div>
-
 </body>
 </html>
