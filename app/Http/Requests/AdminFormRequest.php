@@ -47,13 +47,11 @@ class AdminFormRequest extends FormRequest
             $rules += [
                 'fullname' =>[
                     'required',
-                    // 'unique:tbl_admin,admin_fullname',
                     Rule::unique('tbl_admin', 'admin_fullname')->ignore($this->admin),
                 ],
                 'name' =>[
                     'required',
                     Rule::unique('tbl_admin', 'admin_username')->ignore($this->admin),
-                    // 'unique:tbl_admin,admin_username',
                 ],
             ];
         }
@@ -68,6 +66,4 @@ class AdminFormRequest extends FormRequest
             'name.required' => 'The username field is required.',
         ];
     }
-
-
 }
