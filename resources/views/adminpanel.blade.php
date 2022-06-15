@@ -85,7 +85,7 @@
                  <th scope="row">{{$loop->index+1}}</th>
                  <td>{{$admin->admin_fullname}}</td>
                  <td>{{$admin->admin_username}}</td>
-                 <td><a href="" class="btn btn-warning me-2"> Edit</i></a>
+                 <td><a href="{{url('admin/'.$admin->admin_id.'/edit')}}" class="btn btn-warning me-2"> Edit</i></a>
                  <a href="/admin-delete/{{$admin->admin_id}}" class="btn btn-danger">Remove</i></a>
                  </td>
                  </tr>
