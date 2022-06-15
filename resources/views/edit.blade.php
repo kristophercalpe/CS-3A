@@ -22,13 +22,13 @@
         <h2>ADMIN PANEL</h2>
              <form class="form-inline">
                 <button type="button" class="btn btn-success">
-                <i class="bi bi-plus-lg"><a href="adminpanel" class="text-light" style="text-decoration:none; property"></i> Admin List</a>
+                <i class="bi bi-plus-lg"><a href="/adminpanel" class="text-light" style="text-decoration:none; property"></i> Admin List</a>
                 </button>
                 <button type="button" class="btn btn-success">
-                <i class="bi bi-people"><a href="profile" class="text-light" style="text-decoration:none; property"></i> User List </a>
+                <i class="bi bi-people"><a href="/profile" class="text-light" style="text-decoration:none; property"></i> User List </a>
                 </button>
                 <button type="button" class="btn btn-success">
-                <i class="bi bi-box-arrow-in-right"><a href="adminpanel" class="text-light" style="text-decoration:none; property"></i> Back</a>
+                <i class="bi bi-box-arrow-in-right"><a href="/adminpanel" class="text-light" style="text-decoration:none; property"></i> Back</a>
                 </button>
             </form>
         </div>
