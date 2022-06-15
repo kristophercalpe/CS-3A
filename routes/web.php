@@ -4,6 +4,7 @@ use Illuminate\Foundation\Application;
 use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\UserProfileController;
 
 /*
 |--------------------------------------------------------------------------
@@ -37,29 +38,19 @@ Route::get('/adminlogin', function () {
 });
 
 Route::get('/adminpanel', [AdminController::class,'index']);
+Route::get('/profile', [UserProfileController::class,'index']);
 
 Route::get('/', function () {
     return View::make('pages.welcome');
 });
 
-Route::get('/changepassword', function () {
-    return view('changepassword');
-});
-
-Route::get('/profile', function () {
-    return view('profile');
-});
 
 Route::get('/view', function () {
     return view('view');
 });
 
-Route::get('/changepassword2', function () {
-    return view('changepassword2');
-});
-
 Route::resource('admin', App\Http\Controllers\AdminController::class);
+Route::resource('user', App\Http\Controllers\UserProfileController::class);
 
 Route::get('/admin-delete/{admin_id}',[AdminController::class,'delete']);
-
-Route::post('/admin-login',[AdminController::class,'login']);
+Route::get('/user-delete/{user_id}',[UserProfileController::class,'delete']);
