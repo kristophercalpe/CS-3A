@@ -1,6 +1,3 @@
-<!--Still not connected to database-->
-
-
 <!DOCTYPE html>
 <html>
 <head>
