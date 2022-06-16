@@ -24,7 +24,7 @@
                 <i class="bi bi-people"></i> User List
                 </button>
                 
-                <button onclick="location.href=''" type="button" class="btn btn-success">
+                <button onclick="location.href='/adminlogin'" type="button" class="btn btn-success">
                 <i class="bi bi-box-arrow-in-right"></i> Logout
                 </button>
             </form>
