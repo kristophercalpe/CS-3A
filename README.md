@@ -9,3 +9,6 @@ Please change the value of DB_DATABASE in .env file to "database" - DB_DATABASE=
 - UserManagement: Done
 - Registration Page: Done
 - Login Page: Done
+- Module Permission: Done
+- Posting/ comment/ react: In Progress
+- Image Upload: In Progress
