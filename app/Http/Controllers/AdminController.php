@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\AdminFormRequest;
 use App\Models\Admin;
+use Illuminate\Support\Facades\DB;
 
 class AdminController extends Controller
 {
@@ -25,12 +26,10 @@ class AdminController extends Controller
         catch(\Exception $e){
             return redirect('/adminpanel')->with('message', 'Something Went Wrong.'.$e);
         } 
-    }
 
-    public function login(Request $request)
-    {
+
     }
-   
+  
     public function index()
     {
         $admin = Admin::get();
@@ -39,6 +38,7 @@ class AdminController extends Controller
 
     public function edit(Admin $admin)
     {
+        // dd($admin);
         return view('/edit', compact('admin'));
     }
     /**
@@ -55,13 +55,35 @@ class AdminController extends Controller
         $admin->admin_username = $request->name;
         $admin->admin_password = $request->password;
         $admin->save();
-        return redirect('/adminpanel')->with('message', 'Admin Updated  Successfully.');
+        return redirect('/adminpanel')->with('message', 'Admin Updated Successfully.');
     }
     public function delete($admin_id)
     {
         $adminK = Admin::whereadmin_id($admin_id)->first();
 
         $adminK->delete();
-        return redirect('/adminpanel'); 
+        return redirect('/adminpanel')->with('message', 'Admin Deleted Successfully.');
     }
+
+
+    public function adminPage()
+    {
+        return view('admin');
+    }
+
+    public function adminloginFinal(Request $request)
+    {
+        $password = DB::table('tbl_admin')->where('admin_username', $request->AdminUsername)->value('admin_password');
+        // echo $password;
+        if($password==$request->AdminPassword)
+        {
+            return redirect('/adminpanel');
+        }
+        else
+        {
+            return redirect('/adminlogin')->with('message1', 'Credentials not found');
+        }
+
+    }
+
 }
