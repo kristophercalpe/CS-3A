@@ -7,24 +7,46 @@
 <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
 
 <link href="/css/login.css" rel="stylesheet">
-
+<style>
+    .color
+    {
+        color:#F7F0D5;
+    }
+    </style>
 </head>
 
 <body>
 <br><br><br>
   <div class="container">
     <h1 class="liwanag">liwanag</h1>
-    <form method="POST">
+
+
+    <div class="container mt-5 p-0">
+         @if($errors->any())
+             <ul class="alert alert-warning">
+                 @foreach($errors->all() as $error)
+                 <li>{{$error}}</li>
+                 @endforeach
+             </ul>
+        @endif
+
+        @if(session('message1'))
+            <h3 class="color">{{session('message1')}}</h3>
+       @endif
+     </div>
+
+     <form method="POST" action="{{url('posts')}}">
+        @csrf
     <label for="email"><b></b></label>
     <input type="text" placeholder="Email" name="email" id="email" required><br>
     <label for="psw"><b></b></label>
-    <input type="password" placeholder="Password" name="psw" id="psw" required><br>
+    <input type="password" placeholder="Password" name="password" id="psw" required><br>
   
     <button type="submit" class="loginbtn">Login</button>
   </div>
   
   <div class="register">
-    <p>No account? <a href="register">Register now.</a></p>
+    <p>No account? <a href="/register">Register now.</a></p>
   </div>
    </form>
 </body>
