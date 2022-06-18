@@ -111,7 +111,29 @@ if(isset($_POST['SUBMIT'])){
 }
 
 ?>
-  
+<br><br><br><br><br><br><br><br><br><br><br><br>
+
+<script>
+    let counter = 0;
+    
+    function heart(x){
+        
+        var button =document.getElementById("btn" + x);
+        var color2 = document.getElementById("heart"+x);
+       document.getElementById("heart" +x).className = "fa fa-heart";
+       console.log(x);
+      
+       if(counter % 2 == 0){
+        color2.style.color = "red";
+       }else{
+        color2.style.color = "black";
+       
+       }
+      
+       
+       counter++;
+        
+    }  
 
 </body>
 
