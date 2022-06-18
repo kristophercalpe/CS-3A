@@ -14,6 +14,7 @@
 <br><br><br>
   <div class="container">
     <h1 class="liwanag">liwanag</h1>
+    <form method="POST">
     <label for="email"><b></b></label>
     <input type="text" placeholder="Email" name="email" id="email" required><br>
     <label for="psw"><b></b></label>
@@ -25,7 +26,7 @@
   <div class="register">
     <p>No account? <a href="register">Register now.</a></p>
   </div>
-   
+   </form>
 </body>
 
 </html>
