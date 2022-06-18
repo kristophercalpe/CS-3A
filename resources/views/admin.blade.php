@@ -1,7 +1,4 @@
-
 <!DOCTYPE html>
-
-<!-- Everything works as intended. QA(Encina) -->
 
 <head>
 <meta charset="utf-8">
@@ -9,13 +6,35 @@
 <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
 
-<link href="/css/admin.css" rel="stylesheet"> 
+<link href="/css/admin.css" rel="stylesheet">
+<style>
+    .color
+    {
+        color:#F7F0D5;
+    }
 
-    </head>
+</style>
+
+</head>
     <body>
     <div class="container">
     <h1 class="liwanag">liwanag</h1>
-    <form method="POST">
+    <div class="container mt-5 p-0">
+         @if($errors->any())
+             <ul class="alert alert-warning">
+                 @foreach($errors->all() as $error)
+                 <li>{{$error}}</li>
+                 @endforeach
+             </ul>
+        @endif
+
+        @if(session('message1'))
+            <h3 class="color">{{session('message1')}}</h3>
+       @endif
+     </div>
+
+    <form method="POST" action="{{url('adminposts')}}">
+        @csrf
 
     <label for="AdminUsername"><b></b></label>
     <input type="text" placeholder="Admin Username" name="AdminUsername" id="AdminUsername" required><br>
