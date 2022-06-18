@@ -240,3 +240,20 @@ body {margin:0; background-color: #292929;}
   font-size:20px;
 
 }
+
+.imgC{
+  position: relative;
+  top:15%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width: 500px;
+ 
+}
+.imgC img{
+    width: 250px;
+    height: 200px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 3px 4px rgba(0,0,0,0.5) ;
+}
