@@ -39,6 +39,7 @@
             <h5>{{session('message')}}</h5>
        @endif
      </div>
+        
     <div class="container mt-5 p-0">
         <table class="table table-hover text-center">
             <thead class="bg-dark text-light">
@@ -51,13 +52,13 @@
                 </tr>
             </thead>
             <tbody class="bg-white">
-                     @foreach($users as $user)
-                     <th scope="row">{{$loop->index+1}}</th>
-                     <td>{{$user->user_fullname}}</td>
-                     <td>{{$user->user_username}}</td>
-                     <td>{{$user->user_email}}</td>
-                     <td><a href="{{url('user/'.$user->user_id.'/edit')}}" class="btn btn-warning me-2"> Edit</i></a>
-                     <a href="/user-delete/{{$user->user_id}}" class="btn btn-danger">Remove</i></a>
+                 @foreach($users as $user)
+                 <th scope="row">{{$loop->index+1}}</th>
+                 <td>{{$user->user_fullname}}</td>
+                 <td>{{$user->user_username}}</td>
+                 <td>{{$user->user_email}}</td>
+                 <td><a href="{{url('user/'.$user->user_id.'/edit')}}" class="btn btn-warning me-2"> Edit</i></a>
+                 <a href="/user-delete/{{$user->user_id}}" class="btn btn-danger">Remove</i></a>
                  </td>
                  </tr>
                  @endforeach  
@@ -66,7 +67,7 @@
     </div>         
     <div class="modal fade" id="addnewuser" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
     <div class="modal-dialog">
-       <form action="{{url('user')}}" method="POST">
+    <form action="{{url('user')}}" method="POST">
         @csrf
         <div class="modal-content">
             <div class="modal-header">
@@ -92,11 +93,10 @@
             </div>
             <div class="modal-footer">
                 <button type="reset" class="btn btn-outline-secondary" data-bs-dismiss="modal">Cancel</button>
-                <button type="submit" class="btn btn-success" name="addnewuser">Save</button>
+                <button type="submit" class="btn btn-success">Save</button>
             </div>
             </div>
         </form>
     </div>
 </body>
 </html>
-    
