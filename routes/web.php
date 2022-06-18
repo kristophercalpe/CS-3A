@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 use Inertia\Inertia;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserProfileController;
+use App\Http\Controllers\RegisterController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,14 +18,14 @@ use App\Http\Controllers\UserProfileController;
 |
 */
 
-Route::get('/', function () {
-    return Inertia::render('Welcome', [
-        'canLogin' => Route::has('login'),
-        'canRegister' => Route::has('register'),
-        'laravelVersion' => Application::VERSION,
-        'phpVersion' => PHP_VERSION,
-    ]);
-});
+// Route::get('/', function () {
+//     return Inertia::render('Welcome', [
+//         'canLogin' => Route::has('login'),
+//         'canRegister' => Route::has('register'),
+//         'laravelVersion' => Application::VERSION,
+//         'phpVersion' => PHP_VERSION,
+//     ]);
+// });
 
 Route::get('/dashboard', function () {
     return Inertia::render('Dashboard');
@@ -32,16 +33,18 @@ Route::get('/dashboard', function () {
 
 require __DIR__.'/auth.php';
 
-
-Route::get('/adminlogin', function () {
-    return view('admin');
-});
-
 Route::get('/adminpanel', [AdminController::class,'index']);
+
 Route::get('/profile', [UserProfileController::class,'index']);
+
+Route::get('/register', [RegisterController::class,'index']);
 
 Route::get('/', function () {
     return View::make('pages.welcome');
+});
+
+Route::get('/home', function () {
+    return view('post');
 });
 
 
@@ -51,6 +54,13 @@ Route::get('/view', function () {
 
 Route::resource('admin', App\Http\Controllers\AdminController::class);
 Route::resource('user', App\Http\Controllers\UserProfileController::class);
+Route::resource('register', App\Http\Controllers\RegisterController::class);
+
+Route::get('adminlogin', [AdminController::class,'adminPage']);
+Route::post('adminposts', [AdminController::class,'adminloginFinal']);
+
+Route::get('login', [UserProfileController::class,'userPage']);
+Route::post('posts', [UserProfileController::class,'login']);
 
 Route::get('/admin-delete/{admin_id}',[AdminController::class,'delete']);
 Route::get('/user-delete/{user_id}',[UserProfileController::class,'delete']);
