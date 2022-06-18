@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use Illuminate\Http\Request;
 use App\Http\Requests\UserProfileFormRequest;
 use App\Models\UserProfile;
+use Illuminate\Support\Facades\DB;
 
 class UserProfileController extends Controller
 {
@@ -28,10 +29,6 @@ class UserProfileController extends Controller
         } 
     }
 
-    public function login(Request $request)
-    {
-    }
-   
     public function index()
     {
         $user = UserProfile::get();
@@ -40,7 +37,8 @@ class UserProfileController extends Controller
 
     public function edit(UserProfile $user)
     {
-       return view('/view', compact('user'));
+        // dd($admin);
+        return view('/view', compact('user'));
     }
     /**
      * Update the specified resource in storage.
@@ -64,6 +62,26 @@ class UserProfileController extends Controller
         $user = UserProfile::whereuser_id($user_id)->first();
 
         $user->delete();
-        return redirect('/profile'); 
+        return redirect('/profile')->with('message', 'User Deleted Successfully.');; 
     }
+
+    public function userPage()
+    {
+        return view('auth.login');
+    }
+
+    public function login(Request $request)
+    {
+        $password = DB::table('tbl_user')->where('user_email', $request->email)->value('user_password');
+        // echo $password;
+        if($password==$request->password)
+        {
+            return redirect('/home');
+        }
+        else
+        {
+            return redirect('/login')->with('message1', 'Credentials not found');
+        }
+    }
+
 }
