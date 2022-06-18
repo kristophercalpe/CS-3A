@@ -50,6 +50,67 @@ if(isset($_POST['SUBMIT'])){
     echo "<textarea class = 'formDesign2'name='texts'  cols='30' rows='10'>$text</textarea>";
     echo "<div class='react'>
     <a class='active' href='#'><i class='fa fa-heart-o'></i> Like</a>
+    <?php
+$con = mysqli_connect('localhost','root',"");
+$db = mysqli_select_db($con,'userinfo');
+$sql = mysqli_query($con,"Select * from users Where Name ='".$_SESSION['user']."'");
+
+
+
+
+    // Details about Uploading Text
+if(isset($_POST['SUBMIT'])){
+    $Image = $_FILES['files'];
+    $text=$_POST['texts'];
+    $user =$_SESSION['user'];
+
+   
+    $num = count((array)$Image['name']);
+    $strings = implode(",", $Image['name']);
+    $strings2 = explode(',', $strings);
+
+      
+       for ($i = 0; $i < $num; $i++){
+           
+            $file_name = $Image['name'][$i];
+            $file_size = $Image['size'][$i];
+            $file_tmp = $Image['tmp_name'][$i];
+            $file_type = $Image['type'][$i];
+            $file_extension = pathinfo($file_name, PATHINFO_EXTENSION);
+            $extensions = array("jpeg","jpg","png");
+           
+
+            if(in_array($file_extension,$extensions) === false){
+                $error[] ="Extension is not included, please choose JPEG, JPG, or PNG";
+
+            }
+            if($file_size > 2097152){
+            $error[] = "File size must be exactly or under 2 MB";
+            }
+        
+            if(empty($error)== true){
+                move_uploaded_file($file_tmp,"TmporaryImage/".$file_name);
+         
+                
+
+            }else{
+            }
+            
+        }
+
+        if(!empty($strings)){
+            $sql = mysqli_query($con,"Insert into users(Name,Texts,Image) 
+            Values ('$user','$text','$strings')");
+
+        }else{
+            $sql = mysqli_query($con,"Insert into users(Name,Texts) 
+            Values ('$user','$text')");
+        }
+
+    
+}
+
+?>
     <a class='active' href='#'><i class='fa fa-commenting-o'></i> Comment</a>
     <a class='active' href='#'><i class='fa fa-share-square-o'></i> Share</a></div></div>";
 }
