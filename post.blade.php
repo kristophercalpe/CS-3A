@@ -134,7 +134,24 @@ if(isset($_POST['SUBMIT'])){
        counter++;
         
     }  
+function preview(){
+        
+        var totalFiles = $('#files').get(0).files.length;
+    
+        for(var i = 0; i < totalFiles; i++){
+            if(i >= 4 ){
+               alert("ONLY 4 PICTURES ARE ALLOWED!!!!");
+                
+             }else{
+                $('#imageC').append("<img src = '"+URL.createObjectURL(event.target.files[i])+"'>");
+            }
+        }
+      }
 
+    
+</script>
+
+<br><br>
 </body>
 
 </html>
