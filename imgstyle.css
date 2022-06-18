@@ -170,3 +170,73 @@ body {margin:0; background-color: #292929;}
   margin-right: 5%;
   border: none;
 }
+
+@media screen and (max-width: 1000px) {
+  .second-box {
+    float: center;
+    display: block;
+    text-align: left;
+    width: 76%;
+    padding: 8px;
+    margin-left: 10%;
+   }
+}
+
+@media screen and (max-width: 1000px) {
+  .formDesign {
+    float: center;
+    display: block;
+    text-align: left;
+    width: 76%;
+    padding: 8px;
+    margin-top: 13%;
+  }
+}
+
+.react{
+  position:relative;
+  width: 100%;
+  background-color: #FF99CC;
+  overflow: auto;
+}
+
+.imageIcon{
+  position: relative;
+  left:5%;
+  top:86%;
+  text-align: center;
+
+  
+}
+.imageIcon i{
+ font-size: 25px;
+}
+
+.imageIcon i:hover{
+  padding:3px;
+  font-size: 25px;
+  font-weight: bold;
+  opacity: 1;
+  background-color: hotpink;
+}
+
+
+.react button:hover{
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 1;
+  background-color: hotpink;
+}
+
+.react button {
+  float: left;
+  width: 23%;
+  text-align: center;
+  padding: 12px 0;
+  transition: all 0.3s ease;
+  font-size: 20px;
+  color: black;
+  margin-left: 20%;
+  font-size:20px;
+
+}
