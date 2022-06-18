@@ -10,8 +10,8 @@
 <body>
     <header>
 <div class="welcome-text">
-        <h1>
- <span a href="#">liwanag</span></h1>
+       
+ <h1><span a href="#">liwanag</span></h1>
  <script type="text/javascript">
      var color = ["#040000", "#66005c", "#040000", "#66005c", "#040000" ];
      var i = 0;
