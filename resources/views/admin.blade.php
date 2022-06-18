@@ -1,7 +1,7 @@
 
 <!DOCTYPE html>
 
-//Everything works as intended. QA(Encina)
+<!-- Everything works as intended. QA(Encina) -->
 
 <head>
 <meta charset="utf-8">
@@ -9,7 +9,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Merienda+One&display=swap" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css2?family=Sansita&display=swap" rel="stylesheet">
 
-<link href="/css/admin.css" rel="stylesheet">
+<link href="/css/admin.css" rel="stylesheet"> 
 
     </head>
     <body>
