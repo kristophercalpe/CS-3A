@@ -25,12 +25,29 @@
 <br>
 
 <div class="second-box">
-    <form action="" method ="POST">
-        <textarea class = "formDesign"name="texts" id="" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
-        <div class="icon-bar-sb">
-            <button class="active" name='SUBMIT' onclick="myFunction()"><i class="fa fa-fw fa-upload"></i>POST</button>
+    <form action="" method ="POST" id="myform" name="myform" enctype = "multipart/form-data">
+    <div class="icon-bar-sb">
+                <button class="active" name='SUBMIT' id ="SUBMIT" on><i class="fa fa-fw fa-upload"></i>POST</button>
+            </div>
+        <div class="imgC" id="imageC">
+            
         </div>
+            <textarea class = "formDesign"name="texts" id="texts" cols="30" rows="10" placeholder="What's on your mind?"></textarea>
+            <div class="imageIcon">
+                <label for="files">
+                    <i class="fa fa-file-image-o">IMAGE</i>
+                    <input type="file" name="files[]" id="files" multiple onchange="preview()" style="display:none">
+                </label>
+                
+            </div>
+            
     </form>
+
+    
+    <?php
+
+    ?>
+
 </div>
 <br>
 
