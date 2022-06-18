@@ -1,0 +1,68 @@
+h1 {text-align: center;}
+p {text-align: center;}
+div {text-align: center;}
+
+
+input[type=text], input[type=password] {
+  width: 28%;
+  padding: 13px;
+  margin: 11px 0 10px 0;
+  display: inline-block;
+  font-family:'Sansita', sans-serif;
+  border: none;
+  background: #FF9EF5;
+  border-radius: 15px;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: white;
+  outline: none;
+}
+
+
+body {
+    background-color:#262221;
+}
+
+
+.loginbtn {
+  background-color: #FF9EF5;
+  color: black;
+  padding: 10px 12px;
+  margin: 4px 0;
+  border: none;
+  margin-top:39px;
+  cursor: pointer;
+  font-size:19px;
+  width: 14%;
+  opacity: 0.9;
+  border-radius: 15px;
+  font-family: 'Sansita', sans-serif;
+}
+
+.loginbtn:hover {
+  opacity: 1;
+}
+
+.container {
+  padding: 6px;
+}
+
+.liwanag {
+    font-family: 'Merienda One', cursive;
+    color: #FF9EF5;
+    font-size: 99px;
+    margin-top:69px;
+    margin-bottom: 25px;
+}
+
+a {
+  color: dodgerblue;
+}
+
+.register {
+  color:white;
+  margin-top: 21px;
+  text-align: center;
+
+}
