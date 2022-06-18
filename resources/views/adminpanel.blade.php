@@ -19,14 +19,11 @@
                 <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addnewadmin">
                 <i class="bi bi-plus-lg"></i> Create New Admin
                 </button>
-                
                 <button onclick="location.href='/profile'" type="button" class="btn btn-success">
                 <i class="bi bi-people"></i> User List
                 </button>
-                
-                <button onclick="location.href='/adminlogin'" type="button" class="btn btn-success">
-                <i class="bi bi-box-arrow-in-right"></i> Logout
-                </button>
+                <a href="{{url('adminlogin')}}" class="btn btn-success">Logout</i></a>
+
             </form>
         </div>
     </div>
