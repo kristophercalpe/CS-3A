@@ -26,7 +26,7 @@ class UserProfileController extends Controller
         }
         catch(\Exception $e){
             return redirect('/profile')->with('message', 'Something Went Wrong.'.$e);
-        } 
+        }
     }
 
     public function index()
@@ -42,7 +42,7 @@ class UserProfileController extends Controller
     }
     /**
      * Update the specified resource in storage.
-     * 
+     *
      * @param \Illuminate\Http\Request $request
      * @param \App\Models\UserProfile $user
      * @return \Illuminate\Http\Response
@@ -62,7 +62,7 @@ class UserProfileController extends Controller
         $user = UserProfile::whereuser_id($user_id)->first();
 
         $user->delete();
-        return redirect('/profile')->with('message', 'User Deleted Successfully.');; 
+        return redirect('/profile')->with('message', 'User Deleted Successfully.');;
     }
 
     public function userPage()
@@ -76,7 +76,7 @@ class UserProfileController extends Controller
         // echo $password;
         if($password==$request->password)
         {
-            return redirect('/home');
+            return redirect('/post');
         }
         else
         {

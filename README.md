@@ -5,11 +5,10 @@ Duplicate your dot (.) files, Vendor and node_modules folders from Laravel.
 Please change the value of DB_DATABASE in .env file to "database" - DB_DATABASE=database
 
 
-**June 19, 2022 5:10 PM PHT**<br>
+**June 18, 2022 10:35 PM PHT**<br>
 - UserManagement: Done
 - Registration Page: Done
 - Login Page: Done
 - Module Permission: Done
-- Posting: Done
-- React: Done
+- Posting/ comment/ react: In Progress
 - Image Upload: In Progress

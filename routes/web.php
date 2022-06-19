@@ -6,6 +6,8 @@ use Inertia\Inertia;
 use App\Http\Controllers\AdminController;
 use App\Http\Controllers\UserProfileController;
 use App\Http\Controllers\RegisterController;
+use App\Http\Controllers\Getdata;
+use App\Http\Controllers\UserController;
 
 /*
 |--------------------------------------------------------------------------
@@ -47,6 +49,10 @@ Route::get('/home', function () {
     return view('post');
 });
 
+Route::get('/post', function () {
+    return View::make('pages.post');
+});
+
 
 Route::get('/view', function () {
     return view('view');
@@ -64,3 +70,11 @@ Route::post('posts', [UserProfileController::class,'login']);
 
 Route::get('/admin-delete/{admin_id}',[AdminController::class,'delete']);
 Route::get('/user-delete/{user_id}',[UserProfileController::class,'delete']);
+
+
+Route::get('/post', function () {
+    return view('post');
+});
+
+Route::post('post',[UserController::class,'getData']);
+Route::get('post',[Getdata::class,'getdatabase']);

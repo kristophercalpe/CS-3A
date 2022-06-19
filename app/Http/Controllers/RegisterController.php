@@ -22,12 +22,12 @@ class RegisterController extends Controller
             $tbl_user->user_password = $request->password;
             $tbl_user->save();
             //change redirect to /login
-            return redirect('/home');
+            return redirect('/post');
 
         }
         catch(\Exception $e){
             return redirect('/register')->with('message', 'Something Went Wrong.'.$e);
-        } 
+        }
     }
 
     public function index()
@@ -35,13 +35,13 @@ class RegisterController extends Controller
         return view('auth.register');
     }
 
-  
+
     /**
      * Update the specified resource in storage.
-     * 
+     *
      * @param \Illuminate\Http\Request $request
      * @param \App\Models\UserProfile $user
      * @return \Illuminate\Http\Response
      */
-    
+
 }
