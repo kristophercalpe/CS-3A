@@ -362,16 +362,6 @@ box-shadow: 2px 5px 3px 4px rgba(0,0,0,0.5) ;
       $countarray = count($stringarr);
   
     
-  
-          echo "<div class ='imgC'>";
-          foreach($stringarr as $data){ 
-              if(!empty($data)){
-                  echo "<img src='".$path.$data."' alt='img'>";
-              }
-              
-          }
-  
-       echo"</div>";
 
           echo "<textarea disabled class = 'formDesign2'name='texts'  cols='30' rows='10'>".$x['Texts']."</textarea>";
           echo "<div class='react'>
