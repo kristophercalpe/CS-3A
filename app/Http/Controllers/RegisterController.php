@@ -21,6 +21,7 @@ class RegisterController extends Controller
             $tbl_user->user_email = $request->email;
             $tbl_user->user_password = $request->password;
             $tbl_user->save();
+            //change redirect to /login
             return redirect('/home');
 
         }
