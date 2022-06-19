@@ -57,21 +57,19 @@ body {margin:0; background-color: #292929;}
 }
 
 .formDesign{
-    position: absolute;
-    margin-top:10%;
+    position: relative;
     margin-left:10%;
     width: 80%;
-    height:180px;
+    height:250px;
     font-size: 35px;
 
 
 }
 .formDesign2{
-    position: absolute;
-    margin-top:2%;
+    position: relative;
     margin-left:10%;
     width: 80%;
-    height:200px;
+    height:250px;
     font-size: 35px;
 }
 
@@ -80,12 +78,12 @@ body {margin:0; background-color: #292929;}
   background-color: #FF99CC ;
   margin-right: 30%;
   margin-left: 30%;
-  height: 380px;
-  width: 500px;
+  bottom:0;
+  width: 550px;
   border: 6px solid #000000;
   border-radius: 25px;
   padding: 5px;
-
+ 
 }
 
 .icon-bar-fb{
@@ -149,14 +147,14 @@ body {margin:0; background-color: #292929;}
   background-color: #FF99CC;
   margin-right: 30%;
   margin-left: 30%;
-  height: 280px;
-  width: 500px;
+  width: 550px;
   border: 6px solid #000000;
   border-radius: 25px;
   padding: 5px;
 }
 
 .icon-bar-sb {
+  position:relative;
   width: 100%;
   background-color: #FF99CC;
   overflow: auto;
@@ -172,6 +170,7 @@ body {margin:0; background-color: #292929;}
   margin-right: 5%;
   border: none;
 }
+
 @media screen and (max-width: 1000px) {
   .second-box {
     float: center;
@@ -195,13 +194,41 @@ body {margin:0; background-color: #292929;}
 }
 
 .react{
+  position:relative;
   width: 100%;
   background-color: #FF99CC;
   overflow: auto;
-  margin-top:45%;
 }
 
-.react a {
+.imageIcon{
+  position: relative;
+  left:5%;
+  top:86%;
+  text-align: center;
+
+  
+}
+.imageIcon i{
+ font-size: 25px;
+}
+
+.imageIcon i:hover{
+  padding:3px;
+  font-size: 25px;
+  font-weight: bold;
+  opacity: 1;
+  background-color: hotpink;
+}
+
+
+.react button:hover{
+  font-size: 20px;
+  font-weight: bold;
+  opacity: 1;
+  background-color: hotpink;
+}
+
+.react button {
   float: left;
   width: 23%;
   text-align: center;
@@ -209,10 +236,24 @@ body {margin:0; background-color: #292929;}
   transition: all 0.3s ease;
   font-size: 20px;
   color: black;
-  margin-left: 8%;
+  margin-left: 20%;
+  font-size:20px;
+
 }
 
-.react a:hover {
-  background-color: hotpink;
-  width: 25%;
+.imgC{
+  position: relative;
+  top:15%;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  width: 500px;
+ 
+}
+.imgC img{
+    width: 250px;
+    height: 200px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    box-shadow: 2px 5px 3px 4px rgba(0,0,0,0.5) ;
 }
