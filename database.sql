@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 13, 2022 at 04:09 PM
--- Server version: 10.4.22-MariaDB
--- PHP Version: 8.1.2
+-- Generation Time: Jun 19, 2022 at 02:42 PM
+-- Server version: 10.4.21-MariaDB
+-- PHP Version: 7.3.30
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -110,7 +110,8 @@ CREATE TABLE `tbl_admin` (
 
 INSERT INTO `tbl_admin` (`admin_id`, `admin_fullname`, `admin_username`, `admin_password`, `updated_at`, `created_at`) VALUES
 (11, 'SAMPLE', 'Sampleuser', 'Samplepass', '2022-06-13 10:53:29', NULL),
-(12, 'Karla Marie Plaza', 'karla plaza', 'plaza', '2022-06-13 03:01:22', '2022-06-13 11:01:22');
+(12, 'Karla Marie Plaza', 'karla plaza', 'plaza', '2022-06-13 03:01:22', '2022-06-13 11:01:22'),
+(14, 'test', 'test', 'test', '2022-06-19 01:35:35', '2022-06-19 09:35:35');
 
 -- --------------------------------------------------------
 
@@ -136,7 +137,37 @@ INSERT INTO `tbl_user` (`user_id`, `user_fullname`, `user_username`, `user_email
 (1, 'Juan Dela Cruz', 'JDC', 'from@example.com', '', '2022-06-13 14:02:04', NULL),
 (2, 'Pedro Dela Cruz', 'JDC', 'from@example.com', '', '2022-06-13 14:02:04', NULL),
 (5, 'Jason Dela Cruz', 'JDC', 'from@example.com', '111', '2022-06-13 14:02:04', NULL),
-(6, 'Jayson Tatum', 'JT', 'jt@gmail.com', '111', '2022-06-13 14:02:04', NULL);
+(6, 'Jayson Tatum', 'JT', 'jt@gmail.com', '111', '2022-06-13 14:02:04', NULL),
+(11, 'test', 'test', 'test@gmail.com', 'test', '2022-06-19 01:35:56', '2022-06-19 09:35:56'),
+(13, 'test12', 'test12', 'test12@gmail.com', 'test12', '2022-06-19 01:44:12', '2022-06-19 09:44:12');
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `userdata`
+--
+
+CREATE TABLE `userdata` (
+  `id` int(11) NOT NULL,
+  `Name` varchar(255) NOT NULL,
+  `Texts` varchar(255) NOT NULL,
+  `Image` longtext NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `userdata`
+--
+
+INSERT INTO `userdata` (`id`, `Name`, `Texts`, `Image`) VALUES
+(1, 'Test', 'hello world', 'null'),
+(2, 'test2', 'hello world2', 'null'),
+(3, '', 'test', ''),
+(4, '', 'test', ''),
+(5, '', 'test', ''),
+(6, '', 'hey', ''),
+(7, '', 'test', ''),
+(8, '', 'hellooo', ''),
+(9, '', 'heloooo', '');
 
 -- --------------------------------------------------------
 
@@ -199,6 +230,12 @@ ALTER TABLE `tbl_user`
   ADD PRIMARY KEY (`user_id`);
 
 --
+-- Indexes for table `userdata`
+--
+ALTER TABLE `userdata`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -231,13 +268,19 @@ ALTER TABLE `personal_access_tokens`
 -- AUTO_INCREMENT for table `tbl_admin`
 --
 ALTER TABLE `tbl_admin`
-  MODIFY `admin_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `admin_id` int(100) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT for table `tbl_user`
 --
 ALTER TABLE `tbl_user`
-  MODIFY `user_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `user_id` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
+
+--
+-- AUTO_INCREMENT for table `userdata`
+--
+ALTER TABLE `userdata`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `users`
