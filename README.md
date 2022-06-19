@@ -6,10 +6,10 @@ Please change the value of DB_DATABASE in .env file to "database" - DB_DATABASE=
 
 
 **June 19, 2022 9:30 PM PHT**<br>
-- UserManagement: Done
-- Registration Page: Done
-- Login Page: Done
-- Module Permission: Done
-- Posting: Done
-- React: Done
-- Image Upload: Done
+✅ UserManagement
+✅ Registration Page
+✅ Login Page
+✅ Module Permission
+✅ Posting
+✅ React
+✅ Image Upload
