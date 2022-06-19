@@ -77,4 +77,6 @@ Route::get('/post', function () {
 });
 
 Route::post('post',[UserController::class,'getData']);
+Route::post('post',[UserController::class,'store']);
 Route::get('post',[Getdata::class,'getdatabase']);
+
