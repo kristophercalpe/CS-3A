@@ -12,8 +12,8 @@
 <body>
     <header>
 <div class="welcome-text">
-        <h1>
- <span a href="#">liwanag</span></h1>
+       
+ <h1><span a href="#">liwanag</span></h1>
 <a href="login">Login</a>
 <a href="register">Register</a>
     </div>
