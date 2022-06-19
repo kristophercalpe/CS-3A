@@ -28,7 +28,7 @@ class UserController extends Controller
     $users->Texts = request('texts');
     $users->Name =" ";
     $users::insert([
-        'Image' => implode(',', $images),
+        'Image' => " ",
         'Texts' => request('texts'),
         'Name'=> " "
     ]);
