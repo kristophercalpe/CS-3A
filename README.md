@@ -5,8 +5,7 @@ Instruction: Duplicate your dot (.) files, Vendor and node_modules folders from 
 Please change the value of DB_DATABASE in .env file to "database" - DB_DATABASE=database
 
 
-**June 19, 2022 9:40 PM PHT**<br>
-✅ Landing Page <br>
+**June 19, 2022 9:30 PM PHT**<br>
 ✅ UserManagement <br>
 ✅ Registration Page <br>
 ✅ Login Page <br>
